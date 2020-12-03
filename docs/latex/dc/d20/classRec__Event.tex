@@ -1,0 +1,331 @@
+\hypertarget{classRec__Event}{}\section{Rec\+\_\+\+Event Class Reference}
+\label{classRec__Event}\index{Rec\+\_\+\+Event@{Rec\+\_\+\+Event}}
+
+
+Recombination event class (I\+GoR\textquotesingle{}s graph nodes)  
+
+
+
+
+{\ttfamily \#include $<$Rec\+\_\+\+Event.\+h$>$}
+
+Inheritance diagram for Rec\+\_\+\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/d20/classRec__Event}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRec__Event_a60eeeab16f772a796612ff3a74953b86}\label{classRec__Event_a60eeeab16f772a796612ff3a74953b86}} 
+{\bfseries Rec\+\_\+\+Event} (Gene\+\_\+class, Seq\+\_\+side)
+\item 
+\mbox{\Hypertarget{classRec__Event_a13358de891bf06f564ed8848a364fffd}\label{classRec__Event_a13358de891bf06f564ed8848a364fffd}} 
+{\bfseries Rec\+\_\+\+Event} (Gene\+\_\+class, Seq\+\_\+side, std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_ad4726690ef39967d2e2996f84d452f80}\label{classRec__Event_ad4726690ef39967d2e2996f84d452f80}} 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries copy} ()=0
+\item 
+\mbox{\Hypertarget{classRec__Event_a6786fc194b49fd7fd66a041f523b5fd8}\label{classRec__Event_a6786fc194b49fd7fd66a041f523b5fd8}} 
+virtual int {\bfseries size} () const
+\item 
+virtual void \hyperlink{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}{iterate} (double \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, const std\+::string \&, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&, Marginal\+\_\+array\+\_\+p \&, const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)=0
+\begin{DoxyCompactList}\small\item\em Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRec__Event_af256a2c82def78d75d41bc05e490da2f}\label{classRec__Event_af256a2c82def78d75d41bc05e490da2f}} 
+bool {\bfseries set\+\_\+priority} (int)
+\item 
+\mbox{\Hypertarget{classRec__Event_ac835ea2ddf76b1a7741c4ed9bd156d2d}\label{classRec__Event_ac835ea2ddf76b1a7741c4ed9bd156d2d}} 
+const Gene\+\_\+class {\bfseries get\+\_\+class} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a812462a0bb3d7b64589751ca005d9e38}\label{classRec__Event_a812462a0bb3d7b64589751ca005d9e38}} 
+const Seq\+\_\+side {\bfseries get\+\_\+side} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_ad4aa300c8b318c97934cbc87eb8d8145}\label{classRec__Event_ad4aa300c8b318c97934cbc87eb8d8145}} 
+const std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ {\bfseries get\+\_\+realizations\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_ad4e1e82af3720042818e75344b68cd2d}\label{classRec__Event_ad4e1e82af3720042818e75344b68cd2d}} 
+const int {\bfseries get\+\_\+priority} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a62d9a81d21710e36b890e3eb09e94969}\label{classRec__Event_a62d9a81d21710e36b890e3eb09e94969}} 
+const Rec\+\_\+\+Event\+\_\+name {\bfseries get\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a03d808075b0c4c3bf8cf2a1a0dfae326}\label{classRec__Event_a03d808075b0c4c3bf8cf2a1a0dfae326}} 
+const std\+::string {\bfseries get\+\_\+nickname} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a0e512b4561e24468d257538eb02c71d3}\label{classRec__Event_a0e512b4561e24468d257538eb02c71d3}} 
+void {\bfseries set\+\_\+nickname} (std\+::string name)
+\item 
+\mbox{\Hypertarget{classRec__Event_adda54fe71dcdacbacdd6115d4cc8af29}\label{classRec__Event_adda54fe71dcdacbacdd6115d4cc8af29}} 
+Event\+\_\+type {\bfseries get\+\_\+type} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a0bb7fc872df04fc1c6710b608aa0b151}\label{classRec__Event_a0bb7fc872df04fc1c6710b608aa0b151}} 
+int {\bfseries get\+\_\+len\+\_\+max} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_af7df26b7168c20987a04db57fbe254f2}\label{classRec__Event_af7df26b7168c20987a04db57fbe254f2}} 
+int {\bfseries get\+\_\+len\+\_\+min} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a28825288bde180aeba218c977ccabcfc}\label{classRec__Event_a28825288bde180aeba218c977ccabcfc}} 
+bool {\bfseries operator==} (const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} \&) const
+\item 
+\mbox{\Hypertarget{classRec__Event_a953dcbb13b233c32aa0613a849440445}\label{classRec__Event_a953dcbb13b233c32aa0613a849440445}} 
+void {\bfseries update\+\_\+event\+\_\+name} ()
+\item 
+\mbox{\Hypertarget{classRec__Event_a8e6172c6c95a21fc90e8bbe4e2f6c46d}\label{classRec__Event_a8e6172c6c95a21fc90e8bbe4e2f6c46d}} 
+virtual std\+::queue$<$ int $>$ {\bfseries draw\+\_\+random\+\_\+realization} (const Marginal\+\_\+array\+\_\+p \&, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::unordered\+\_\+map$<$ Seq\+\_\+type, std\+::string $>$ \&, std\+::mt19937\+\_\+64 \&) const =0
+\item 
+\mbox{\Hypertarget{classRec__Event_a48b16d4001f7b3fc6ad318fa91b24a37}\label{classRec__Event_a48b16d4001f7b3fc6ad318fa91b24a37}} 
+virtual void {\bfseries write2txt} (std\+::ofstream \&)=0
+\item 
+\mbox{\Hypertarget{classRec__Event_ad44e71ab8c6451b52ed74efe8e141271}\label{classRec__Event_ad44e71ab8c6451b52ed74efe8e141271}} 
+virtual void {\bfseries ind\+\_\+normalize} (Marginal\+\_\+array\+\_\+p \&, size\+\_\+t) const
+\item 
+\mbox{\Hypertarget{classRec__Event_a2b60dba9d85fce50fae2c0498c1725a0}\label{classRec__Event_a2b60dba9d85fce50fae2c0498c1725a0}} 
+virtual void {\bfseries initialize\+\_\+event} (std\+::unordered\+\_\+set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_ad1df9fff876350910e4085f67ba33ea2}\label{classRec__Event_ad1df9fff876350910e4085f67ba33ea2}} 
+virtual void {\bfseries initialize\+\_\+crude\+\_\+scenario\+\_\+proba\+\_\+bound} (double \&, std\+::forward\+\_\+list$<$ double $\ast$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_a16ba99854c015c6ae915814edba74b89}\label{classRec__Event_a16ba99854c015c6ae915814edba74b89}} 
+virtual void {\bfseries add\+\_\+to\+\_\+marginals} (long double, Marginal\+\_\+array\+\_\+p \&) const =0
+\item 
+\mbox{\Hypertarget{classRec__Event_ac279e3c17ccd88ad7c64d2962da762fe}\label{classRec__Event_ac279e3c17ccd88ad7c64d2962da762fe}} 
+virtual void {\bfseries set\+\_\+crude\+\_\+upper\+\_\+bound\+\_\+proba} (size\+\_\+t, size\+\_\+t, Marginal\+\_\+array\+\_\+p \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_a0e31d0c1ee79f16b3e6232fa854730db}\label{classRec__Event_a0e31d0c1ee79f16b3e6232fa854730db}} 
+void {\bfseries set\+\_\+upper\+\_\+bound\+\_\+proba} (double)
+\item 
+\mbox{\Hypertarget{classRec__Event_a52c29bfae989da81330569b45c6f5d81}\label{classRec__Event_a52c29bfae989da81330569b45c6f5d81}} 
+double {\bfseries get\+\_\+upper\+\_\+bound\+\_\+proba} () const
+\item 
+virtual void \hyperlink{classRec__Event_a6b5b41f5d35969c61ba5fc90895203c3}{update\+\_\+event\+\_\+internal\+\_\+probas} (const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_a47dab56164c703538f2ce214e88a80f6}\label{classRec__Event_a47dab56164c703538f2ce214e88a80f6}} 
+void {\bfseries set\+\_\+event\+\_\+identifier} (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classRec__Event_af6798049fbccee092bdd076b0db2c0a8}\label{classRec__Event_af6798049fbccee092bdd076b0db2c0a8}} 
+int {\bfseries get\+\_\+event\+\_\+identifier} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_aa5239e0c8d49b37c3e11e6d9554f47af}\label{classRec__Event_aa5239e0c8d49b37c3e11e6d9554f47af}} 
+void {\bfseries set\+\_\+event\+\_\+marginal\+\_\+size} (size\+\_\+t ev\+\_\+size)
+\item 
+\mbox{\Hypertarget{classRec__Event_a191288063285122d7ce0bca6347bb469}\label{classRec__Event_a191288063285122d7ce0bca6347bb469}} 
+bool {\bfseries is\+\_\+updated} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_a1bd0021e7474ce38b0ff128a54e17634}\label{classRec__Event_a1bd0021e7474ce38b0ff128a54e17634}} 
+void {\bfseries fix} (bool fix\+\_\+status)
+\item 
+\mbox{\Hypertarget{classRec__Event_a97f8b79a1d651b577ebebb8343dd0e4f}\label{classRec__Event_a97f8b79a1d651b577ebebb8343dd0e4f}} 
+bool {\bfseries is\+\_\+fixed} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_ad5c903886cabd9b5099ce3f9fca75721}\label{classRec__Event_ad5c903886cabd9b5099ce3f9fca75721}} 
+void {\bfseries set\+\_\+viterbi\+\_\+run} (bool viterbi\+\_\+like)
+\item 
+\mbox{\Hypertarget{classRec__Event_aff100a79e69ebcf09302c9a6dd95e945}\label{classRec__Event_aff100a79e69ebcf09302c9a6dd95e945}} 
+virtual double $\ast$ {\bfseries get\+\_\+updated\+\_\+ptr} ()
+\item 
+\mbox{\Hypertarget{classRec__Event_a0048d764ba437539343d7e5c7a3ab4bc}\label{classRec__Event_a0048d764ba437539343d7e5c7a3ab4bc}} 
+void {\bfseries compute\+\_\+crude\+\_\+upper\+\_\+bound\+\_\+scenario\+\_\+proba} (double \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_aa99c6c645054931943d9efe514684378}\label{classRec__Event_aa99c6c645054931943d9efe514684378}} 
+const std\+::vector$<$ int $>$ \& {\bfseries get\+\_\+current\+\_\+realizations\+\_\+index\+\_\+vec} () const
+\item 
+\mbox{\Hypertarget{classRec__Event_ae241781e2135e31568bcd795af58588e}\label{classRec__Event_ae241781e2135e31568bcd795af58588e}} 
+virtual bool {\bfseries has\+\_\+effect\+\_\+on} (Seq\+\_\+type) const =0
+\item 
+\mbox{\Hypertarget{classRec__Event_a12142d5ac5b5a0b19fe1bc32619247c9}\label{classRec__Event_a12142d5ac5b5a0b19fe1bc32619247c9}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba\+\_\+wrap\+\_\+up} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ model\+\_\+queue, double scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int seq\+\_\+len) const
+\item 
+\mbox{\Hypertarget{classRec__Event_a49debedd11dbd2692cb8dbff233e4641}\label{classRec__Event_a49debedd11dbd2692cb8dbff233e4641}} 
+virtual void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int \&seq\+\_\+len) const =0
+\item 
+\mbox{\Hypertarget{classRec__Event_a767dee38e8ddd93a328258d1394e00fc}\label{classRec__Event_a767dee38e8ddd93a328258d1394e00fc}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences) const
+\item 
+\mbox{\Hypertarget{classRec__Event_a82875bc17562b09142250db7f65844f2}\label{classRec__Event_a82875bc17562b09142250db7f65844f2}} 
+virtual void {\bfseries initialize\+\_\+\+Len\+\_\+proba\+\_\+bound} (std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRec__Event_ae55f294d71bd8f52cec13d318515b799}\label{classRec__Event_ae55f294d71bd8f52cec13d318515b799}} 
+int {\bfseries compare\+\_\+sequences} (std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{classRec__Event_a3aa2d2d685646b82cc04e25d3395e9ab}\label{classRec__Event_a3aa2d2d685646b82cc04e25d3395e9ab}} 
+void {\bfseries add\+\_\+realization} (const \hyperlink{structEvent__realization}{Event\+\_\+realization} \&)
+\item 
+\mbox{\Hypertarget{classRec__Event_a0922f15959f097b4e1f1f4ef00c48d48}\label{classRec__Event_a0922f15959f097b4e1f1f4ef00c48d48}} 
+void {\bfseries iterate\+\_\+wrap\+\_\+up} (double \&scenario\+\_\+proba, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&downstream\+\_\+proba\+\_\+map, const std\+::string \&sequence, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&int\+\_\+sequence, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&index\+\_\+map, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&offset\+\_\+map, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&next\+\_\+event\+\_\+ptr\+\_\+arr, Marginal\+\_\+array\+\_\+p \&updated\+\_\+marginal\+\_\+array\+\_\+p, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&allowed\+\_\+realizations, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&seq\+\_\+offsets, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&error\+\_\+rate\+\_\+p, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&counters\+\_\+list, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&events\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&safety\+\_\+set, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&mismatches\+\_\+lists, double \&seq\+\_\+max\+\_\+prob\+\_\+scenario, double \&proba\+\_\+threshold\+\_\+factor)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRec__Event_a07fc418d22098c2926653834fa0436c5}\label{classRec__Event_a07fc418d22098c2926653834fa0436c5}} 
+std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ {\bfseries event\+\_\+realizations}
+\item 
+\mbox{\Hypertarget{classRec__Event_abd0cbac0857932ab119236558ca8fff2}\label{classRec__Event_abd0cbac0857932ab119236558ca8fff2}} 
+int {\bfseries priority}
+\item 
+\mbox{\Hypertarget{classRec__Event_a484c20b2089a38fe1b265c8d01e6111e}\label{classRec__Event_a484c20b2089a38fe1b265c8d01e6111e}} 
+Gene\+\_\+class {\bfseries event\+\_\+class}
+\item 
+\mbox{\Hypertarget{classRec__Event_a39522384697c7db8d3798d58e84740f1}\label{classRec__Event_a39522384697c7db8d3798d58e84740f1}} 
+Seq\+\_\+side {\bfseries event\+\_\+side}
+\item 
+\mbox{\Hypertarget{classRec__Event_a4884eb9d3d3d08fb90e04e94dda014c4}\label{classRec__Event_a4884eb9d3d3d08fb90e04e94dda014c4}} 
+Rec\+\_\+\+Event\+\_\+name {\bfseries name}
+\item 
+\mbox{\Hypertarget{classRec__Event_ad7a94cea0adcd33d96138b52520d3645}\label{classRec__Event_ad7a94cea0adcd33d96138b52520d3645}} 
+std\+::string {\bfseries nickname}
+\item 
+\mbox{\Hypertarget{classRec__Event_ac90c7ca13ec2652ff60b6d8955608156}\label{classRec__Event_ac90c7ca13ec2652ff60b6d8955608156}} 
+int {\bfseries len\+\_\+min}
+\item 
+\mbox{\Hypertarget{classRec__Event_a737c3083cf8b51493afbd81f4b77f32f}\label{classRec__Event_a737c3083cf8b51493afbd81f4b77f32f}} 
+int {\bfseries len\+\_\+max}
+\item 
+\mbox{\Hypertarget{classRec__Event_a0c88bea7d614edcbc669e31f327bc526}\label{classRec__Event_a0c88bea7d614edcbc669e31f327bc526}} 
+Event\+\_\+type {\bfseries type}
+\item 
+\mbox{\Hypertarget{classRec__Event_af2001da20d37833fde0796a925dd6a76}\label{classRec__Event_af2001da20d37833fde0796a925dd6a76}} 
+int {\bfseries event\+\_\+index}
+\item 
+\mbox{\Hypertarget{classRec__Event_af6cfd37096cac09c44dc03284b8bbf37}\label{classRec__Event_af6cfd37096cac09c44dc03284b8bbf37}} 
+std\+::forward\+\_\+list$<$ std\+::tuple$<$ int, int, int $>$ $>$ {\bfseries memory\+\_\+and\+\_\+offsets}
+\item 
+\mbox{\Hypertarget{classRec__Event_a4fbeb3694cf3a3ef3097ec2af5e96f3c}\label{classRec__Event_a4fbeb3694cf3a3ef3097ec2af5e96f3c}} 
+bool {\bfseries updated}
+\item 
+\mbox{\Hypertarget{classRec__Event_a877417ca96bc33491b73ef9f60c8f9eb}\label{classRec__Event_a877417ca96bc33491b73ef9f60c8f9eb}} 
+bool {\bfseries viterbi\+\_\+run}
+\item 
+\mbox{\Hypertarget{classRec__Event_a835244ce395c153efca8e5b9dff73f06}\label{classRec__Event_a835244ce395c153efca8e5b9dff73f06}} 
+bool {\bfseries initialized}
+\item 
+\mbox{\Hypertarget{classRec__Event_ae18d91f49ea6652853f9c620a3cf2005}\label{classRec__Event_ae18d91f49ea6652853f9c620a3cf2005}} 
+size\+\_\+t {\bfseries event\+\_\+marginal\+\_\+size}
+\item 
+\mbox{\Hypertarget{classRec__Event_a337f07555611e2d37b962e5e8d4915a6}\label{classRec__Event_a337f07555611e2d37b962e5e8d4915a6}} 
+bool {\bfseries fixed}
+\item 
+\mbox{\Hypertarget{classRec__Event_a6ce94f7d653f284678bb31462257579e}\label{classRec__Event_a6ce94f7d653f284678bb31462257579e}} 
+double {\bfseries event\+\_\+upper\+\_\+bound\+\_\+proba}
+\item 
+\mbox{\Hypertarget{classRec__Event_a6631657503c1b5cd5e6b55cef3bb2c55}\label{classRec__Event_a6631657503c1b5cd5e6b55cef3bb2c55}} 
+double {\bfseries scenario\+\_\+downstream\+\_\+upper\+\_\+bound\+\_\+proba}
+\item 
+\mbox{\Hypertarget{classRec__Event_a3ed5d1bcf4a2ca83aebb2e81c0d9a06b}\label{classRec__Event_a3ed5d1bcf4a2ca83aebb2e81c0d9a06b}} 
+double {\bfseries scenario\+\_\+upper\+\_\+bound\+\_\+proba}
+\item 
+\mbox{\Hypertarget{classRec__Event_a23ef7bc59131d34ace470c9bea042e66}\label{classRec__Event_a23ef7bc59131d34ace470c9bea042e66}} 
+std\+::forward\+\_\+list$<$ double $\ast$ $>$ {\bfseries updated\+\_\+proba\+\_\+bounds\+\_\+list}
+\item 
+\mbox{\Hypertarget{classRec__Event_a38998c66aa7e4b29284f4c8f35cabbc6}\label{classRec__Event_a38998c66aa7e4b29284f4c8f35cabbc6}} 
+std\+::vector$<$ int $>$ {\bfseries current\+\_\+realizations\+\_\+index\+\_\+vec}
+\item 
+\mbox{\Hypertarget{classRec__Event_a57f8109e6fdbee1590cd1a6ddf62242a}\label{classRec__Event_a57f8109e6fdbee1590cd1a6ddf62242a}} 
+const int $\ast$ {\bfseries current\+\_\+realization\+\_\+index}
+\item 
+\mbox{\Hypertarget{classRec__Event_afaac2c8eb6698209ab356b892e379000}\label{classRec__Event_afaac2c8eb6698209ab356b892e379000}} 
+int {\bfseries current\+\_\+downstream\+\_\+proba\+\_\+memory\+\_\+layers} \mbox{[}6\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Recombination event class (I\+GoR\textquotesingle{}s graph nodes) 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+This class implements the recombination event object. Rec\+\_\+\+Events are the nodes in I\+GoR\textquotesingle{}s Bayesian Network structure. This is a purely abstract class and cannot be instanciated as is, only classes deriving from it and implementing the purely abstract methods can be.
+
+Rec\+\_\+\+Events contain the different \hyperlink{structEvent__realization}{Event\+\_\+realization} associated to it in a hashmap.
+
+The Rec\+Events design is key to the way I\+GoR explore all possible scenarios (through the iterate method) and generate sequences (through the draw\+\_\+random\+\_\+realization) 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}\label{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}} 
+\index{Rec\+\_\+\+Event@{Rec\+\_\+\+Event}!iterate@{iterate}}
+\index{iterate@{iterate}!Rec\+\_\+\+Event@{Rec\+\_\+\+Event}}
+\subsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily virtual void Rec\+\_\+\+Event\+::iterate (\begin{DoxyParamCaption}\item[{double \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&}]{,  }\item[{const std\+::string \&}]{,  }\item[{const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&}]{,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&}]{,  }\item[{std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&}]{,  }\item[{double \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em scenario\+\_\+proba} & Probability of the currently explored (incomplete) scenario \\
+\hline
+\mbox{\tt in,out}  & {\em downstream\+\_\+proba\+\_\+map} & \\
+\hline
+\mbox{\tt in}  & {\em sequence} & The studied sequence in nucleotide code \\
+\hline
+\mbox{\tt in}  & {\em int\+\_\+sequence} & The studied sequence in integer code \\
+\hline
+\mbox{\tt in,out}  & {\em base\+\_\+index\+\_\+map} & Dynamic map recording where probabilities should be read on the marginals. \\
+\hline
+\mbox{\tt in}  & {\em offset\+\_\+map} & Tells the event by how much indices from the children events should be modified \\
+\hline
+\mbox{\tt in}  & {\em next\+\_\+event\+\_\+ptr\+\_\+arr} & Indicates the next event to call iterate on \\
+\hline
+\mbox{\tt in}  & {\em updated\+\_\+marginals\+\_\+point} & Summary marginals on which complete scenario posteriors are recorded \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+parameters\+\_\+point} & Current recombination probability distribution \\
+\hline
+\mbox{\tt in}  & {\em allowed\+\_\+realizations} & The set of genomic templates alignment \\
+\hline
+\mbox{\tt in,out}  & {\em constructed\+\_\+sequences} & Map containing the (incomplete) scenario\textquotesingle{}s resulting sequence \\
+\hline
+\mbox{\tt in,out}  & {\em seq\+\_\+offsets} & Map containing the 3\textquotesingle{} and 5\textquotesingle{} offsets of each scenario sequence piece \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+rate\+\_\+p} & Pointer to the error model object \\
+\hline
+\mbox{\tt in}  & {\em counters\+\_\+list} & The list of \hyperlink{classCounter}{Counter} to be counted \\
+\hline
+\mbox{\tt in}  & {\em events\+\_\+map} & A map containing all events contained in the Model\+\_\+parms, accessible through their type, gene class and side. \\
+\hline
+\mbox{\tt in,out}  & {\em safety\+\_\+set} & A map indicating whether checks on offsets overlap should be performed \\
+\hline
+\mbox{\tt in,out}  & {\em mismatches\+\_\+lists} & A map containing the (incomplete) scenario mismatches \\
+\hline
+\mbox{\tt in}  & {\em seq\+\_\+max\+\_\+prob\+\_\+scenario} & Most likely scenario\textquotesingle{}s probability for the considered sequence \\
+\hline
+\mbox{\tt in}  & {\em proba\+\_\+threshold\+\_\+factor} & Threshold on probability ratio between most likely scenario and explored scenario\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+The iterate method is the heart of I\+GoR\textquotesingle{}s scenario exploration. \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} define an order in which the Rec\+Event should be processed. Upon call of iterate all Event\+Realization of the Rec\+Event are assessed and for each possible realization the iterate method is called recursively for the next event. Inside the iterate method a filtering on too improbable realizations is performed (tree prunning) using the downstream\+\_\+proba\+\_\+map.
+
+The index map is used to read off the probability of the current Rec\+Event Event\+Realization at the correct location given the events parent\textquotesingle{}s realizations. It is further modified to take into account the current event\textquotesingle{}s realization when its children realization probabilities will be read. 
+
+Implemented in \hyperlink{classDeletion_a2479968a06062e87027f8acef2631211}{Deletion}, \hyperlink{classDinucl__markov_ace49d0da113be7d77ad0d4c3b8152c3d}{Dinucl\+\_\+markov}, \hyperlink{classGene__choice_ab036f686e32561d4db2aa9eca3be4cf0}{Gene\+\_\+choice}, and \hyperlink{classInsertion_a9c0f15989a298d7ddf7311c432f995b9}{Insertion}.
+
+\mbox{\Hypertarget{classRec__Event_a6b5b41f5d35969c61ba5fc90895203c3}\label{classRec__Event_a6b5b41f5d35969c61ba5fc90895203c3}} 
+\index{Rec\+\_\+\+Event@{Rec\+\_\+\+Event}!update\+\_\+event\+\_\+internal\+\_\+probas@{update\+\_\+event\+\_\+internal\+\_\+probas}}
+\index{update\+\_\+event\+\_\+internal\+\_\+probas@{update\+\_\+event\+\_\+internal\+\_\+probas}!Rec\+\_\+\+Event@{Rec\+\_\+\+Event}}
+\subsubsection{\texorpdfstring{update\+\_\+event\+\_\+internal\+\_\+probas()}{update\_event\_internal\_probas()}}
+{\footnotesize\ttfamily void Rec\+\_\+\+Event\+::update\+\_\+event\+\_\+internal\+\_\+probas (\begin{DoxyParamCaption}\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Does nothing since in general events will not need to perform any operation on the marginal probabilities 
+
+Reimplemented in \hyperlink{classDinucl__markov_a8da33acb0a389a0a4c845a69c11b173c}{Dinucl\+\_\+markov}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rec\+\_\+\+Event.\+h\item 
+Rec\+\_\+\+Event.\+cpp\end{DoxyCompactItemize}

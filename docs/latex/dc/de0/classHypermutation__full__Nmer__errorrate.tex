@@ -1,0 +1,101 @@
+\hypertarget{classHypermutation__full__Nmer__errorrate}{}\section{Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate Class Reference}
+\label{classHypermutation__full__Nmer__errorrate}\index{Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate@{Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate}}
+
+
+A non-\/additive context dependent hypermutation model.  
+
+
+
+
+{\ttfamily \#include $<$Hypermutationfull\+Nmererrorrate.\+h$>$}
+
+Inheritance diagram for Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{dc/de0/classHypermutation__full__Nmer__errorrate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_ae5c78aa08882abf2ae207f291bddefc0}\label{classHypermutation__full__Nmer__errorrate_ae5c78aa08882abf2ae207f291bddefc0}} 
+{\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double, size\+\_\+t=0)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_abf30127d93616a5a79a50997248072e5}\label{classHypermutation__full__Nmer__errorrate_abf30127d93616a5a79a50997248072e5}} 
+{\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, std\+::vector$<$ double $>$, size\+\_\+t=0)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_ab84a6d5b251ca3768312f12ef1dabb22}\label{classHypermutation__full__Nmer__errorrate_ab84a6d5b251ca3768312f12ef1dabb22}} 
+{\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double, std\+::string, size\+\_\+t=0)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a5d46938132c4161595c9e8262f88207a}\label{classHypermutation__full__Nmer__errorrate_a5d46938132c4161595c9e8262f88207a}} 
+{\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, std\+::vector$<$ double $>$, std\+::string, size\+\_\+t=0)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a08bda80384e58115d3d391198b02ecca}\label{classHypermutation__full__Nmer__errorrate_a08bda80384e58115d3d391198b02ecca}} 
+double {\bfseries compare\+\_\+sequences\+\_\+error\+\_\+prob} (double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_aad37473c5f4bd2a2c3a661c70dbbbb24}\label{classHypermutation__full__Nmer__errorrate_aad37473c5f4bd2a2c3a661c70dbbbb24}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_ae3df7b9d6aa44deb4d1b3dd128d7508a}\label{classHypermutation__full__Nmer__errorrate_ae3df7b9d6aa44deb4d1b3dd128d7508a}} 
+void {\bfseries initialize} (const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a512eb3cacde1857d68f55fdf9affed40}\label{classHypermutation__full__Nmer__errorrate_a512eb3cacde1857d68f55fdf9affed40}} 
+void {\bfseries add\+\_\+to\+\_\+norm\+\_\+counter} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a94319d843d6064a37e20f9bdc33d7114}\label{classHypermutation__full__Nmer__errorrate_a94319d843d6064a37e20f9bdc33d7114}} 
+void {\bfseries clean\+\_\+seq\+\_\+counters} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_aa1f6aa8e6a736d4ab71a12868e1783e6}\label{classHypermutation__full__Nmer__errorrate_aa1f6aa8e6a736d4ab71a12868e1783e6}} 
+void {\bfseries clean\+\_\+all\+\_\+counters} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a7f57702455adec179237d5cc3a9d6893}\label{classHypermutation__full__Nmer__errorrate_a7f57702455adec179237d5cc3a9d6893}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a5821a0586ea2b9a793876d3c69a57379}\label{classHypermutation__full__Nmer__errorrate_a5821a0586ea2b9a793876d3c69a57379}} 
+void {\bfseries set\+\_\+output\+\_\+\+Nmer\+\_\+stream} (std\+::string)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_ad08335fef57c57d8b12762682c7c08fe}\label{classHypermutation__full__Nmer__errorrate_ad08335fef57c57d8b12762682c7c08fe}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ {\bfseries copy} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_aee43af5e346e59dcc01c732ccaae69fb}\label{classHypermutation__full__Nmer__errorrate_aee43af5e346e59dcc01c732ccaae69fb}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a1a7706da6d16fafe2e8846774f8ccf01}\label{classHypermutation__full__Nmer__errorrate_a1a7706da6d16fafe2e8846774f8ccf01}} 
+\hyperlink{classHypermutation__full__Nmer__errorrate}{Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate} \& {\bfseries operator+=} (\hyperlink{classHypermutation__full__Nmer__errorrate}{Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate})
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_ae5e6673a5f849a842fd85c2aac873a06}\label{classHypermutation__full__Nmer__errorrate_ae5e6673a5f849a842fd85c2aac873a06}} 
+\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$ {\bfseries add\+\_\+checked} (\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a033630f63b43fc18b5db550fac246e6b}\label{classHypermutation__full__Nmer__errorrate_a033630f63b43fc18b5db550fac246e6b}} 
+const double \& {\bfseries get\+\_\+err\+\_\+rate\+\_\+upper\+\_\+bound} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a09ef2ea013441efdb25067f5e6e87c5c}\label{classHypermutation__full__Nmer__errorrate_a09ef2ea013441efdb25067f5e6e87c5c}} 
+void {\bfseries build\+\_\+upper\+\_\+bound\+\_\+matrix} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a84ebde8adf499035b5c6036032787da1}\label{classHypermutation__full__Nmer__errorrate_a84ebde8adf499035b5c6036032787da1}} 
+int {\bfseries get\+\_\+number\+\_\+non\+\_\+zero\+\_\+likelihood\+\_\+seqs} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_abfa7df0d953e746cdcade2d7689844d4}\label{classHypermutation__full__Nmer__errorrate_abfa7df0d953e746cdcade2d7689844d4}} 
+std\+::queue$<$ int $>$ {\bfseries generate\+\_\+errors} (std\+::string \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classHypermutation__full__Nmer__errorrate_a963811f5ccad25311471048896ebe7e8}\label{classHypermutation__full__Nmer__errorrate_a963811f5ccad25311471048896ebe7e8}} 
+uint64\+\_\+t {\bfseries generate\+\_\+random\+\_\+mutation\+\_\+probas} (double, double)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A non-\/additive context dependent hypermutation model. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+A specialization of the Error\+Rate class. Implements a context dependent hypermutation/error model with tunable context size. A different mutation probability is recorded for each context of size N, leading to 4$^\wedge$N parameters. This model is inspired from the S5F mutability model. The identity of the resulting nucleotide after mutation is assumed to follow a uniform distribution. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hypermutationfull\+Nmererrorrate.\+h\item 
+Hypermutationfull\+Nmererrorrate.\+cpp\end{DoxyCompactItemize}

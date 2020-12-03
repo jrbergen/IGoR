@@ -1,0 +1,172 @@
+\hypertarget{classGene__choice}{}\section{Gene\+\_\+choice Class Reference}
+\label{classGene__choice}\index{Gene\+\_\+choice@{Gene\+\_\+choice}}
+
+
+Gene\+Choice recombination event.  
+
+
+
+
+{\ttfamily \#include $<$Genechoice.\+h$>$}
+
+Inheritance diagram for Gene\+\_\+choice\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/dae/classGene__choice}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGene__choice_aadae79625212bc82c78bce9849e8325a}\label{classGene__choice_aadae79625212bc82c78bce9849e8325a}} 
+{\bfseries Gene\+\_\+choice} (Gene\+\_\+class)
+\item 
+\mbox{\Hypertarget{classGene__choice_a1fcb013e222239211ce0f1137d416157}\label{classGene__choice_a1fcb013e222239211ce0f1137d416157}} 
+{\bfseries Gene\+\_\+choice} (Gene\+\_\+class, std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&)
+\item 
+\mbox{\Hypertarget{classGene__choice_af5558f7c579350c4dc044bd37f26423e}\label{classGene__choice_af5558f7c579350c4dc044bd37f26423e}} 
+{\bfseries Gene\+\_\+choice} (Gene\+\_\+class, std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$)
+\item 
+\mbox{\Hypertarget{classGene__choice_a04760e99cded10a20cb757de374e2c66}\label{classGene__choice_a04760e99cded10a20cb757de374e2c66}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries copy} ()
+\item 
+void \hyperlink{classGene__choice_ab036f686e32561d4db2aa9eca3be4cf0}{iterate} (double \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, const std\+::string \&, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&, Marginal\+\_\+array\+\_\+p \&, const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\begin{DoxyCompactList}\small\item\em Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGene__choice_a7b274bb7d2224f66366636cecc487b72}\label{classGene__choice_a7b274bb7d2224f66366636cecc487b72}} 
+void {\bfseries add\+\_\+realization} (int)
+\item 
+\mbox{\Hypertarget{classGene__choice_a77a1eadc4a10c5adfd10b80f3510efbc}\label{classGene__choice_a77a1eadc4a10c5adfd10b80f3510efbc}} 
+bool {\bfseries add\+\_\+realization} (std\+::string gene\+\_\+name, std\+::string gene\+\_\+sequence)
+\item 
+\mbox{\Hypertarget{classGene__choice_a679b1a47747c90b88c7905fbdf5dddc6}\label{classGene__choice_a679b1a47747c90b88c7905fbdf5dddc6}} 
+void {\bfseries set\+\_\+genomic\+\_\+templates} (const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classGene__choice_a5a439725d4a2e1e7b4ebefce7ff5527e}\label{classGene__choice_a5a439725d4a2e1e7b4ebefce7ff5527e}} 
+std\+::queue$<$ int $>$ {\bfseries draw\+\_\+random\+\_\+realization} (const Marginal\+\_\+array\+\_\+p \&, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::unordered\+\_\+map$<$ Seq\+\_\+type, std\+::string $>$ \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classGene__choice_a9f7c9303d2c0d3a0de6b8098ebf9317b}\label{classGene__choice_a9f7c9303d2c0d3a0de6b8098ebf9317b}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classGene__choice_ab76e5a240887c7c8b4b47abe350e52b2}\label{classGene__choice_ab76e5a240887c7c8b4b47abe350e52b2}} 
+void {\bfseries initialize\+\_\+event} (std\+::unordered\+\_\+set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&)
+\item 
+void \hyperlink{classGene__choice_ac1d61da5a319518f24af8da2e1e6435a}{add\+\_\+to\+\_\+marginals} (long double, Marginal\+\_\+array\+\_\+p \&) const
+\item 
+\mbox{\Hypertarget{classGene__choice_addb3eb932abb73591f123039f06cc4e8}\label{classGene__choice_addb3eb932abb73591f123039f06cc4e8}} 
+bool {\bfseries has\+\_\+effect\+\_\+on} (Seq\+\_\+type) const
+\item 
+\mbox{\Hypertarget{classGene__choice_a6d9d5bb6b3db54ecba7476ad4551f6cc}\label{classGene__choice_a6d9d5bb6b3db54ecba7476ad4551f6cc}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int \&seq\+\_\+len) const
+\item 
+\mbox{\Hypertarget{classGene__choice_a916aec7655d44275ffce9f19acee4b4d}\label{classGene__choice_a916aec7655d44275ffce9f19acee4b4d}} 
+void {\bfseries initialize\+\_\+\+Len\+\_\+proba\+\_\+bound} (std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGene__choice_ad4a26da5a0e142c5135c983af6d042d6}\label{classGene__choice_ad4a26da5a0e142c5135c983af6d042d6}} 
+class {\bfseries Coverage\+\_\+err\+\_\+counter}
+\item 
+\mbox{\Hypertarget{classGene__choice_ad5a47907bf54eec60bc584c426aaca7f}\label{classGene__choice_ad5a47907bf54eec60bc584c426aaca7f}} 
+class {\bfseries Hypermutation\+\_\+global\+\_\+errorrate}
+\item 
+\mbox{\Hypertarget{classGene__choice_a5ff5d89d255ca8ca355c6da8c4be7f68}\label{classGene__choice_a5ff5d89d255ca8ca355c6da8c4be7f68}} 
+class {\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Gene\+Choice recombination event. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Models the gene choice recombination process. The event realizations are explored based on the sequence alignments that were provdided to the inference. Since D gene can be heavily deleted and might not be recognizable by sequence alignments, a special handling of the D gene choice exploring all D positions ranked by their likelihood has been implemented. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGene__choice_ac1d61da5a319518f24af8da2e1e6435a}\label{classGene__choice_ac1d61da5a319518f24af8da2e1e6435a}} 
+\index{Gene\+\_\+choice@{Gene\+\_\+choice}!add\+\_\+to\+\_\+marginals@{add\+\_\+to\+\_\+marginals}}
+\index{add\+\_\+to\+\_\+marginals@{add\+\_\+to\+\_\+marginals}!Gene\+\_\+choice@{Gene\+\_\+choice}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+marginals()}{add\_to\_marginals()}}
+{\footnotesize\ttfamily void Gene\+\_\+choice\+::add\+\_\+to\+\_\+marginals (\begin{DoxyParamCaption}\item[{long double}]{scenario\+\_\+proba,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{updated\+\_\+marginals }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+All add\+\_\+to\+\_\+marginals should take into account the possibility to perform viterbi runs(take only the most likely scenario into account) 
+
+Implements \hyperlink{classRec__Event}{Rec\+\_\+\+Event}.
+
+\mbox{\Hypertarget{classGene__choice_ab036f686e32561d4db2aa9eca3be4cf0}\label{classGene__choice_ab036f686e32561d4db2aa9eca3be4cf0}} 
+\index{Gene\+\_\+choice@{Gene\+\_\+choice}!iterate@{iterate}}
+\index{iterate@{iterate}!Gene\+\_\+choice@{Gene\+\_\+choice}}
+\subsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily void Gene\+\_\+choice\+::iterate (\begin{DoxyParamCaption}\item[{double \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&}]{,  }\item[{const std\+::string \&}]{,  }\item[{const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&}]{,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&}]{,  }\item[{std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&}]{,  }\item[{double \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em scenario\+\_\+proba} & Probability of the currently explored (incomplete) scenario \\
+\hline
+\mbox{\tt in,out}  & {\em downstream\+\_\+proba\+\_\+map} & \\
+\hline
+\mbox{\tt in}  & {\em sequence} & The studied sequence in nucleotide code \\
+\hline
+\mbox{\tt in}  & {\em int\+\_\+sequence} & The studied sequence in integer code \\
+\hline
+\mbox{\tt in,out}  & {\em base\+\_\+index\+\_\+map} & Dynamic map recording where probabilities should be read on the marginals. \\
+\hline
+\mbox{\tt in}  & {\em offset\+\_\+map} & Tells the event by how much indices from the children events should be modified \\
+\hline
+\mbox{\tt in}  & {\em next\+\_\+event\+\_\+ptr\+\_\+arr} & Indicates the next event to call iterate on \\
+\hline
+\mbox{\tt in}  & {\em updated\+\_\+marginals\+\_\+point} & Summary marginals on which complete scenario posteriors are recorded \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+parameters\+\_\+point} & Current recombination probability distribution \\
+\hline
+\mbox{\tt in}  & {\em allowed\+\_\+realizations} & The set of genomic templates alignment \\
+\hline
+\mbox{\tt in,out}  & {\em constructed\+\_\+sequences} & Map containing the (incomplete) scenario\textquotesingle{}s resulting sequence \\
+\hline
+\mbox{\tt in,out}  & {\em seq\+\_\+offsets} & Map containing the 3\textquotesingle{} and 5\textquotesingle{} offsets of each scenario sequence piece \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+rate\+\_\+p} & Pointer to the error model object \\
+\hline
+\mbox{\tt in}  & {\em counters\+\_\+list} & The list of \hyperlink{classCounter}{Counter} to be counted \\
+\hline
+\mbox{\tt in}  & {\em events\+\_\+map} & A map containing all events contained in the Model\+\_\+parms, accessible through their type, gene class and side. \\
+\hline
+\mbox{\tt in,out}  & {\em safety\+\_\+set} & A map indicating whether checks on offsets overlap should be performed \\
+\hline
+\mbox{\tt in,out}  & {\em mismatches\+\_\+lists} & A map containing the (incomplete) scenario mismatches \\
+\hline
+\mbox{\tt in}  & {\em seq\+\_\+max\+\_\+prob\+\_\+scenario} & Most likely scenario\textquotesingle{}s probability for the considered sequence \\
+\hline
+\mbox{\tt in}  & {\em proba\+\_\+threshold\+\_\+factor} & Threshold on probability ratio between most likely scenario and explored scenario\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+The iterate method is the heart of I\+GoR\textquotesingle{}s scenario exploration. \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} define an order in which the Rec\+Event should be processed. Upon call of iterate all Event\+Realization of the Rec\+Event are assessed and for each possible realization the iterate method is called recursively for the next event. Inside the iterate method a filtering on too improbable realizations is performed (tree prunning) using the downstream\+\_\+proba\+\_\+map.
+
+The index map is used to read off the probability of the current Rec\+Event Event\+Realization at the correct location given the events parent\textquotesingle{}s realizations. It is further modified to take into account the current event\textquotesingle{}s realization when its children realization probabilities will be read. 
+
+Implements \hyperlink{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}{Rec\+\_\+\+Event}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Genechoice.\+h\item 
+Genechoice.\+cpp\end{DoxyCompactItemize}

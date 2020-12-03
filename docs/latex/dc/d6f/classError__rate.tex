@@ -1,0 +1,138 @@
+\hypertarget{classError__rate}{}\section{Error\+\_\+rate Class Reference}
+\label{classError__rate}\index{Error\+\_\+rate@{Error\+\_\+rate}}
+
+
+Abstract class for generic error models behavior.  
+
+
+Inheritance diagram for Error\+\_\+rate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.696970cm]{dc/d6f/classError__rate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classError__rate_a85ce800379f3365e1f1e40d0ad4f27d6}\label{classError__rate_a85ce800379f3365e1f1e40d0ad4f27d6}} 
+virtual double {\bfseries compare\+\_\+sequences\+\_\+error\+\_\+prob} (double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)=0
+\item 
+\mbox{\Hypertarget{classError__rate_abda427d21d09f851fc6a497abf0e0d41}\label{classError__rate_abda427d21d09f851fc6a497abf0e0d41}} 
+virtual void {\bfseries update} ()=0
+\item 
+\mbox{\Hypertarget{classError__rate_a1fbed484799dacb10510628f2a107e7e}\label{classError__rate_a1fbed484799dacb10510628f2a107e7e}} 
+virtual void {\bfseries initialize} (const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classError__rate_a59c2011cf8eb4a79ab9d4560c1cdc3c6}\label{classError__rate_a59c2011cf8eb4a79ab9d4560c1cdc3c6}} 
+bool {\bfseries is\+\_\+updated} () const
+\item 
+\mbox{\Hypertarget{classError__rate_ac4aa825ecaa851b880c2e6094c1eb0fd}\label{classError__rate_ac4aa825ecaa851b880c2e6094c1eb0fd}} 
+void {\bfseries update\+\_\+value} (bool update\+\_\+status)
+\item 
+\mbox{\Hypertarget{classError__rate_a565ac6d0924f7fe4321cd0a0ef802825}\label{classError__rate_a565ac6d0924f7fe4321cd0a0ef802825}} 
+virtual void {\bfseries add\+\_\+to\+\_\+norm\+\_\+counter} ()=0
+\item 
+\mbox{\Hypertarget{classError__rate_ae481534229fc21de79b66d8edcc17d62}\label{classError__rate_ae481534229fc21de79b66d8edcc17d62}} 
+virtual void {\bfseries clean\+\_\+seq\+\_\+counters} ()=0
+\item 
+\mbox{\Hypertarget{classError__rate_ae93054df4880e8fd59770e6a091768c9}\label{classError__rate_ae93054df4880e8fd59770e6a091768c9}} 
+void {\bfseries norm\+\_\+weights\+\_\+by\+\_\+seq\+\_\+likelihood} (Marginal\+\_\+array\+\_\+p \&, const size\+\_\+t, const double seq\+\_\+weight=1)
+\item 
+\mbox{\Hypertarget{classError__rate_a03773cbdcb52e0a231ee42f5bdce5cdc}\label{classError__rate_a03773cbdcb52e0a231ee42f5bdce5cdc}} 
+virtual void {\bfseries write2txt} (std\+::ofstream \&)=0
+\item 
+\mbox{\Hypertarget{classError__rate_a86eff4f0308e3232de4fd54bbdc93c04}\label{classError__rate_a86eff4f0308e3232de4fd54bbdc93c04}} 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ {\bfseries copy} () const =0
+\item 
+\mbox{\Hypertarget{classError__rate_ad170cdf5e6c4825f4ca3bf7a8d7b254f}\label{classError__rate_ad170cdf5e6c4825f4ca3bf7a8d7b254f}} 
+virtual std\+::string {\bfseries type} () const =0
+\item 
+\mbox{\Hypertarget{classError__rate_a5d5a7bde961ef0bd9ae5e22156b18552}\label{classError__rate_a5d5a7bde961ef0bd9ae5e22156b18552}} 
+virtual \hyperlink{classError__rate}{Error\+\_\+rate} $\ast$ {\bfseries add\+\_\+checked} (\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$)=0
+\item 
+\mbox{\Hypertarget{classError__rate_aa2dd5f87d6550df93542d598f546df44}\label{classError__rate_aa2dd5f87d6550df93542d598f546df44}} 
+double {\bfseries get\+\_\+model\+\_\+likelihood} () const
+\item 
+\mbox{\Hypertarget{classError__rate_a4d7037b07adf8cca2d0a173f867749e0}\label{classError__rate_a4d7037b07adf8cca2d0a173f867749e0}} 
+double {\bfseries get\+\_\+seq\+\_\+likelihood} () const
+\item 
+\mbox{\Hypertarget{classError__rate_a41990ead366e9882289ddedb6bfd64be}\label{classError__rate_a41990ead366e9882289ddedb6bfd64be}} 
+double {\bfseries get\+\_\+seq\+\_\+probability} () const
+\item 
+\mbox{\Hypertarget{classError__rate_a28d3b3140dec1002e4ae05f0c4bcc4cd}\label{classError__rate_a28d3b3140dec1002e4ae05f0c4bcc4cd}} 
+double {\bfseries get\+\_\+seq\+\_\+mean\+\_\+error\+\_\+number} () const
+\item 
+\mbox{\Hypertarget{classError__rate_ac66afd48ecfe612c9c0d2751372de620}\label{classError__rate_ac66afd48ecfe612c9c0d2751372de620}} 
+virtual const double \& {\bfseries get\+\_\+err\+\_\+rate\+\_\+upper\+\_\+bound} (size\+\_\+t, size\+\_\+t)=0
+\item 
+\mbox{\Hypertarget{classError__rate_a5ee5de524e97762d18b33d48f5bb82ad}\label{classError__rate_a5ee5de524e97762d18b33d48f5bb82ad}} 
+virtual void {\bfseries build\+\_\+upper\+\_\+bound\+\_\+matrix} (size\+\_\+t, size\+\_\+t)=0
+\item 
+\mbox{\Hypertarget{classError__rate_a8f8fb2d0d60985a660070e5b523d4139}\label{classError__rate_a8f8fb2d0d60985a660070e5b523d4139}} 
+virtual int {\bfseries get\+\_\+number\+\_\+non\+\_\+zero\+\_\+likelihood\+\_\+seqs} () const =0
+\item 
+\mbox{\Hypertarget{classError__rate_acb786947d2b19bee160e49e37d87f2f6}\label{classError__rate_acb786947d2b19bee160e49e37d87f2f6}} 
+virtual std\+::queue$<$ int $>$ {\bfseries generate\+\_\+errors} (std\+::string \&, std\+::mt19937\+\_\+64 \&) const =0
+\item 
+\mbox{\Hypertarget{classError__rate_aaf23376c6c60b95f7b4a798dd0b28691}\label{classError__rate_aaf23376c6c60b95f7b4a798dd0b28691}} 
+void {\bfseries set\+\_\+viterbi\+\_\+run} (bool viterbi\+\_\+like)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classError__rate_a332b99f1f3ff28228f552297cbbb471e}\label{classError__rate_a332b99f1f3ff28228f552297cbbb471e}} 
+int {\bfseries debug\+\_\+number\+\_\+scenarios}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classError__rate_ad65514e6bef52d765159276d8c2e4555}\label{classError__rate_ad65514e6bef52d765159276d8c2e4555}} 
+bool {\bfseries updated}
+\item 
+\mbox{\Hypertarget{classError__rate_a88fbd252630f486e1eb9ae76c8d97205}\label{classError__rate_a88fbd252630f486e1eb9ae76c8d97205}} 
+long double {\bfseries model\+\_\+log\+\_\+likelihood}
+\item 
+\mbox{\Hypertarget{classError__rate_a8ab2a2ff3e951d38f7775bcbad794c53}\label{classError__rate_a8ab2a2ff3e951d38f7775bcbad794c53}} 
+int {\bfseries number\+\_\+seq}
+\item 
+\mbox{\Hypertarget{classError__rate_acb4948fe7aedc104a1e36a21a544f7c2}\label{classError__rate_acb4948fe7aedc104a1e36a21a544f7c2}} 
+long double {\bfseries seq\+\_\+likelihood}
+\item 
+\mbox{\Hypertarget{classError__rate_aeb1808d4631732d10ad921075da48a2a}\label{classError__rate_aeb1808d4631732d10ad921075da48a2a}} 
+double {\bfseries seq\+\_\+mean\+\_\+error\+\_\+number}
+\item 
+\mbox{\Hypertarget{classError__rate_a66750e4559780ed2c0f38f30761494c5}\label{classError__rate_a66750e4559780ed2c0f38f30761494c5}} 
+long double {\bfseries scenario\+\_\+new\+\_\+proba}
+\item 
+\mbox{\Hypertarget{classError__rate_ad5c94788f8932da10e863b677644277e}\label{classError__rate_ad5c94788f8932da10e863b677644277e}} 
+long double {\bfseries seq\+\_\+probability}
+\item 
+\mbox{\Hypertarget{classError__rate_a37803a110ad032624ad5b528290a6d01}\label{classError__rate_a37803a110ad032624ad5b528290a6d01}} 
+bool {\bfseries viterbi\+\_\+run}
+\item 
+\mbox{\Hypertarget{classError__rate_a4690df19a431a3b3de07173117ad9cba}\label{classError__rate_a4690df19a431a3b3de07173117ad9cba}} 
+\hyperlink{structMatrix}{Matrix}$<$ double $>$ {\bfseries upper\+\_\+bound\+\_\+proba\+\_\+mat}
+\item 
+\mbox{\Hypertarget{classError__rate_a8081ac69bdf77964721cccf034bb8752}\label{classError__rate_a8081ac69bdf77964721cccf034bb8752}} 
+size\+\_\+t {\bfseries max\+\_\+err}
+\item 
+\mbox{\Hypertarget{classError__rate_adcf9e8c4fa714b05bf025ccd0bada2a5}\label{classError__rate_adcf9e8c4fa714b05bf025ccd0bada2a5}} 
+size\+\_\+t {\bfseries max\+\_\+noerr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for generic error models behavior. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Base class for defining different error models such as additive or non-\/additive hypermutation models. Errors are assessed when all Rec\+Event iterate have been processed (terminal leaf of the scenario tree) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Errorrate.\+h\item 
+Errorrate.\+cpp\end{DoxyCompactItemize}

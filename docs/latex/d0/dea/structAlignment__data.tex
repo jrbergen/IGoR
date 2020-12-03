@@ -1,0 +1,82 @@
+\hypertarget{structAlignment__data}{}\section{Alignment\+\_\+data Class Reference}
+\label{structAlignment__data}\index{Alignment\+\_\+data@{Alignment\+\_\+data}}
+
+
+Stores information on the alignment of one genomic template against the target.  
+
+
+
+
+{\ttfamily \#include $<$Aligner.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a6ef5a876003a9e52b2aec68a1589f518}\label{structAlignment__data_a6ef5a876003a9e52b2aec68a1589f518}} 
+{\bfseries Alignment\+\_\+data} (std\+::string gene, int off)
+\item 
+\mbox{\Hypertarget{structAlignment__data_a37990bfc1ad4908cc21156569cbea5e6}\label{structAlignment__data_a37990bfc1ad4908cc21156569cbea5e6}} 
+{\bfseries Alignment\+\_\+data} (int off, size\+\_\+t five\+\_\+p\+\_\+off, size\+\_\+t three\+\_\+p\+\_\+off, size\+\_\+t align\+\_\+len, std\+::forward\+\_\+list$<$ int $>$ ins, std\+::forward\+\_\+list$<$ int $>$ del, std\+::vector$<$ int $>$ mis, double alignment\+\_\+score)
+\item 
+\mbox{\Hypertarget{structAlignment__data_ae1193f97b177aa3812b0623147f8c196}\label{structAlignment__data_ae1193f97b177aa3812b0623147f8c196}} 
+{\bfseries Alignment\+\_\+data} (std\+::string gene, int off, size\+\_\+t align\+\_\+len, std\+::forward\+\_\+list$<$ int $>$ ins, std\+::forward\+\_\+list$<$ int $>$ del, std\+::vector$<$ int $>$ mis, double alignment\+\_\+score)
+\item 
+\mbox{\Hypertarget{structAlignment__data_a67c0cefecc003f5d9601d6a8094881aa}\label{structAlignment__data_a67c0cefecc003f5d9601d6a8094881aa}} 
+{\bfseries Alignment\+\_\+data} (std\+::string gene, int off, size\+\_\+t five\+\_\+p\+\_\+off, size\+\_\+t three\+\_\+p\+\_\+off, size\+\_\+t align\+\_\+len, std\+::forward\+\_\+list$<$ int $>$ ins, std\+::forward\+\_\+list$<$ int $>$ del, std\+::vector$<$ int $>$ mis, double alignment\+\_\+score)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structAlignment__data_aa59d88faf0d6ec3b4a908bd4ab426c7f}\label{structAlignment__data_aa59d88faf0d6ec3b4a908bd4ab426c7f}} 
+std\+::string {\bfseries gene\+\_\+name}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a88d8eefe00cdb8fa340c993985d6a3e8}\label{structAlignment__data_a88d8eefe00cdb8fa340c993985d6a3e8}} 
+int {\bfseries offset}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a83c2902e3291a3b3a1ab2e5e81ec7fcd}\label{structAlignment__data_a83c2902e3291a3b3a1ab2e5e81ec7fcd}} 
+size\+\_\+t {\bfseries five\+\_\+p\+\_\+offset}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a31daa27cb20395e18f29f5b53c5e6674}\label{structAlignment__data_a31daa27cb20395e18f29f5b53c5e6674}} 
+size\+\_\+t {\bfseries three\+\_\+p\+\_\+offset}
+\item 
+\mbox{\Hypertarget{structAlignment__data_af5725b4491f8d133d3cb20b9f4943a24}\label{structAlignment__data_af5725b4491f8d133d3cb20b9f4943a24}} 
+std\+::forward\+\_\+list$<$ int $>$ {\bfseries insertions}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a233ad0e1783442eb7fa6fc53ccbd3a48}\label{structAlignment__data_a233ad0e1783442eb7fa6fc53ccbd3a48}} 
+std\+::forward\+\_\+list$<$ int $>$ {\bfseries deletions}
+\item 
+\mbox{\Hypertarget{structAlignment__data_ac1d83cdc20d8cc4110ec747645f608a4}\label{structAlignment__data_ac1d83cdc20d8cc4110ec747645f608a4}} 
+size\+\_\+t {\bfseries align\+\_\+length}
+\item 
+\mbox{\Hypertarget{structAlignment__data_a647fbf5ecc1e4a370a78f972602cf503}\label{structAlignment__data_a647fbf5ecc1e4a370a78f972602cf503}} 
+std\+::vector$<$ int $>$ {\bfseries mismatches}
+\item 
+\mbox{\Hypertarget{structAlignment__data_add1c4a0888f58070afb4b17e6a160e70}\label{structAlignment__data_add1c4a0888f58070afb4b17e6a160e70}} 
+double {\bfseries score}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores information on the alignment of one genomic template against the target. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Stores information on the alignment of one genomic template against the target. It contains\+:
+\begin{DoxyItemize}
+\item the gene name
+\item the offset of the alignment (index on the target sequence on which the first letter of the F\+U\+LL genomic template aligns (can be negative or lie outside the target)
+\item 5\textquotesingle{} and 3\textquotesingle{} offset positions of the best alignment first and last aligned nucleotide
+\item insertions \+: indices on the T\+A\+R\+G\+ET of inserted nucleotides
+\item deletions \+: indices on the G\+E\+N\+O\+M\+IC T\+E\+M\+P\+L\+A\+TE of deleted nucleotides
+\item alignment length
+\item list of mismatches (that lie event outside the best alignment to allow I\+GoR to know mismatch positions in advance while exploring different deletions numbers)
+\item the alignment score 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Aligner.\+h\end{DoxyCompactItemize}

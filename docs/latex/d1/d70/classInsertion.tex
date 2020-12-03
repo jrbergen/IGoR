@@ -1,0 +1,154 @@
+\hypertarget{classInsertion}{}\section{Insertion Class Reference}
+\label{classInsertion}\index{Insertion@{Insertion}}
+
+
+\hyperlink{classInsertion}{Insertion} recombination events.  
+
+
+
+
+{\ttfamily \#include $<$Insertion.\+h$>$}
+
+Inheritance diagram for Insertion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/d70/classInsertion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInsertion_a0d34760832ea7f19cbac094a242d0e28}\label{classInsertion_a0d34760832ea7f19cbac094a242d0e28}} 
+{\bfseries Insertion} (Gene\+\_\+class, std\+::pair$<$ int, int $>$)
+\item 
+\mbox{\Hypertarget{classInsertion_a0fac0c59a950d2b9a0f4665dea103b5f}\label{classInsertion_a0fac0c59a950d2b9a0f4665dea103b5f}} 
+{\bfseries Insertion} (Gene\+\_\+class, std\+::forward\+\_\+list$<$ int $>$)
+\item 
+\mbox{\Hypertarget{classInsertion_ad50ab30acaa070dafc9856804cee7191}\label{classInsertion_ad50ab30acaa070dafc9856804cee7191}} 
+{\bfseries Insertion} (Gene\+\_\+class)
+\item 
+\mbox{\Hypertarget{classInsertion_a21d1cf32f7cb2505ace6560499af6ff0}\label{classInsertion_a21d1cf32f7cb2505ace6560499af6ff0}} 
+{\bfseries Insertion} (Gene\+\_\+class, std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&)
+\item 
+\mbox{\Hypertarget{classInsertion_a4d3b461170165250720e8a237c56be07}\label{classInsertion_a4d3b461170165250720e8a237c56be07}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries copy} ()
+\item 
+void \hyperlink{classInsertion_a9c0f15989a298d7ddf7311c432f995b9}{iterate} (double \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, const std\+::string \&, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&, Marginal\+\_\+array\+\_\+p \&, const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\begin{DoxyCompactList}\small\item\em Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInsertion_abb12662317d803931ca241d68fdfeb58}\label{classInsertion_abb12662317d803931ca241d68fdfeb58}} 
+bool {\bfseries add\+\_\+realization} (int)
+\item 
+\mbox{\Hypertarget{classInsertion_a3411f67c94b8c44b5238c48ec8f9d035}\label{classInsertion_a3411f67c94b8c44b5238c48ec8f9d035}} 
+std\+::queue$<$ int $>$ {\bfseries draw\+\_\+random\+\_\+realization} (const Marginal\+\_\+array\+\_\+p \&, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::unordered\+\_\+map$<$ Seq\+\_\+type, std\+::string $>$ \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classInsertion_a30b42a3588251fa54d4c59da67493ed9}\label{classInsertion_a30b42a3588251fa54d4c59da67493ed9}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classInsertion_a249374ebfac39b6f413af9d240bf69f2}\label{classInsertion_a249374ebfac39b6f413af9d240bf69f2}} 
+void {\bfseries initialize\+\_\+event} (std\+::unordered\+\_\+set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classInsertion_a139905cff68908afdc55ee9fabafb191}\label{classInsertion_a139905cff68908afdc55ee9fabafb191}} 
+void {\bfseries add\+\_\+to\+\_\+marginals} (long double, Marginal\+\_\+array\+\_\+p \&) const
+\item 
+\mbox{\Hypertarget{classInsertion_a5c38b8caabad0eda4f948410fd863a37}\label{classInsertion_a5c38b8caabad0eda4f948410fd863a37}} 
+void {\bfseries set\+\_\+crude\+\_\+upper\+\_\+bound\+\_\+proba} (size\+\_\+t, size\+\_\+t, Marginal\+\_\+array\+\_\+p \&)
+\item 
+\mbox{\Hypertarget{classInsertion_aa23f4e5196c4993419f0dbe73142704c}\label{classInsertion_aa23f4e5196c4993419f0dbe73142704c}} 
+void {\bfseries initialize\+\_\+crude\+\_\+scenario\+\_\+proba\+\_\+bound} (double \&, std\+::forward\+\_\+list$<$ double $\ast$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classInsertion_ab050d5c2cc7a609c0ab519f9af7a3eca}\label{classInsertion_ab050d5c2cc7a609c0ab519f9af7a3eca}} 
+bool {\bfseries has\+\_\+effect\+\_\+on} (Seq\+\_\+type) const
+\item 
+\mbox{\Hypertarget{classInsertion_a220705a85efcbca8085e31495d6cefdb}\label{classInsertion_a220705a85efcbca8085e31495d6cefdb}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int \&seq\+\_\+len) const
+\item 
+\mbox{\Hypertarget{classInsertion_a3e0b4b03bdfe363c630f7b5012165650}\label{classInsertion_a3e0b4b03bdfe363c630f7b5012165650}} 
+void {\bfseries initialize\+\_\+\+Len\+\_\+proba\+\_\+bound} (std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classInsertion}{Insertion} recombination events. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+The \hyperlink{classInsertion}{Insertion} Rec\+Event models the distribution of junctional insertion length during the V(\+D)J recombination process. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInsertion_a9c0f15989a298d7ddf7311c432f995b9}\label{classInsertion_a9c0f15989a298d7ddf7311c432f995b9}} 
+\index{Insertion@{Insertion}!iterate@{iterate}}
+\index{iterate@{iterate}!Insertion@{Insertion}}
+\subsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily void Insertion\+::iterate (\begin{DoxyParamCaption}\item[{double \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&}]{,  }\item[{const std\+::string \&}]{,  }\item[{const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&}]{,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&}]{,  }\item[{std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&}]{,  }\item[{double \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em scenario\+\_\+proba} & Probability of the currently explored (incomplete) scenario \\
+\hline
+\mbox{\tt in,out}  & {\em downstream\+\_\+proba\+\_\+map} & \\
+\hline
+\mbox{\tt in}  & {\em sequence} & The studied sequence in nucleotide code \\
+\hline
+\mbox{\tt in}  & {\em int\+\_\+sequence} & The studied sequence in integer code \\
+\hline
+\mbox{\tt in,out}  & {\em base\+\_\+index\+\_\+map} & Dynamic map recording where probabilities should be read on the marginals. \\
+\hline
+\mbox{\tt in}  & {\em offset\+\_\+map} & Tells the event by how much indices from the children events should be modified \\
+\hline
+\mbox{\tt in}  & {\em next\+\_\+event\+\_\+ptr\+\_\+arr} & Indicates the next event to call iterate on \\
+\hline
+\mbox{\tt in}  & {\em updated\+\_\+marginals\+\_\+point} & Summary marginals on which complete scenario posteriors are recorded \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+parameters\+\_\+point} & Current recombination probability distribution \\
+\hline
+\mbox{\tt in}  & {\em allowed\+\_\+realizations} & The set of genomic templates alignment \\
+\hline
+\mbox{\tt in,out}  & {\em constructed\+\_\+sequences} & Map containing the (incomplete) scenario\textquotesingle{}s resulting sequence \\
+\hline
+\mbox{\tt in,out}  & {\em seq\+\_\+offsets} & Map containing the 3\textquotesingle{} and 5\textquotesingle{} offsets of each scenario sequence piece \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+rate\+\_\+p} & Pointer to the error model object \\
+\hline
+\mbox{\tt in}  & {\em counters\+\_\+list} & The list of \hyperlink{classCounter}{Counter} to be counted \\
+\hline
+\mbox{\tt in}  & {\em events\+\_\+map} & A map containing all events contained in the Model\+\_\+parms, accessible through their type, gene class and side. \\
+\hline
+\mbox{\tt in,out}  & {\em safety\+\_\+set} & A map indicating whether checks on offsets overlap should be performed \\
+\hline
+\mbox{\tt in,out}  & {\em mismatches\+\_\+lists} & A map containing the (incomplete) scenario mismatches \\
+\hline
+\mbox{\tt in}  & {\em seq\+\_\+max\+\_\+prob\+\_\+scenario} & Most likely scenario\textquotesingle{}s probability for the considered sequence \\
+\hline
+\mbox{\tt in}  & {\em proba\+\_\+threshold\+\_\+factor} & Threshold on probability ratio between most likely scenario and explored scenario\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+The iterate method is the heart of I\+GoR\textquotesingle{}s scenario exploration. \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} define an order in which the Rec\+Event should be processed. Upon call of iterate all Event\+Realization of the Rec\+Event are assessed and for each possible realization the iterate method is called recursively for the next event. Inside the iterate method a filtering on too improbable realizations is performed (tree prunning) using the downstream\+\_\+proba\+\_\+map.
+
+The index map is used to read off the probability of the current Rec\+Event Event\+Realization at the correct location given the events parent\textquotesingle{}s realizations. It is further modified to take into account the current event\textquotesingle{}s realization when its children realization probabilities will be read. 
+
+Implements \hyperlink{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}{Rec\+\_\+\+Event}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Insertion.\+h\item 
+Insertion.\+cpp\end{DoxyCompactItemize}

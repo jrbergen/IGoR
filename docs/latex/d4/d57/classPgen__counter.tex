@@ -1,0 +1,62 @@
+\hypertarget{classPgen__counter}{}\section{Pgen\+\_\+counter Class Reference}
+\label{classPgen__counter}\index{Pgen\+\_\+counter@{Pgen\+\_\+counter}}
+
+
+Estimates sequences generation probability.  
+
+
+
+
+{\ttfamily \#include $<$Pgencounter.\+h$>$}
+
+Inheritance diagram for Pgen\+\_\+counter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d57/classPgen__counter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPgen__counter_a0c26a5a933018df8c7ceb94213004798}\label{classPgen__counter_a0c26a5a933018df8c7ceb94213004798}} 
+{\bfseries Pgen\+\_\+counter} (std\+::string)
+\item 
+\mbox{\Hypertarget{classPgen__counter_a3291dde0930c68737fd791a2f1b2cc43}\label{classPgen__counter_a3291dde0930c68737fd791a2f1b2cc43}} 
+{\bfseries Pgen\+\_\+counter} (std\+::string, bool, bool do\+\_\+output\+\_\+sequences=false)
+\item 
+\mbox{\Hypertarget{classPgen__counter_a6bc278117c83c8f797578c8b448f77cf}\label{classPgen__counter_a6bc278117c83c8f797578c8b448f77cf}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classPgen__counter_a31b44277309564af777f79954438c8f1}\label{classPgen__counter_a31b44277309564af777f79954438c8f1}} 
+void {\bfseries initialize\+\_\+counter} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classPgen__counter_a903fd5aed510d1f467ccda5fcf173a9a}\label{classPgen__counter_a903fd5aed510d1f467ccda5fcf173a9a}} 
+void {\bfseries count\+\_\+scenario} (long double, double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classPgen__counter_a1884670498536b560eb019cb1514eba3}\label{classPgen__counter_a1884670498536b560eb019cb1514eba3}} 
+void {\bfseries dump\+\_\+sequence\+\_\+data} (int, int)
+\item 
+\mbox{\Hypertarget{classPgen__counter_ade768bb6a0f87b139d7b5ae817ccb86d}\label{classPgen__counter_ade768bb6a0f87b139d7b5ae817ccb86d}} 
+void {\bfseries add\+\_\+checked} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$)
+\item 
+\mbox{\Hypertarget{classPgen__counter_a2a2646dc8be803621c881038c8c34e11}\label{classPgen__counter_a2a2646dc8be803621c881038c8c34e11}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$ {\bfseries copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Estimates sequences generation probability. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+This \hyperlink{classCounter}{Counter} implements an estimator for the generation probability of evaluated sequences. Alternatively the counter can record the probability of generation of putative ancestor (unmutated/error free) sequences and their associated posterior probability. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pgencounter.\+h\item 
+Pgencounter.\+cpp\end{DoxyCompactItemize}

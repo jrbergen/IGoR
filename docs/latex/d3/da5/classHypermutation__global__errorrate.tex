@@ -1,0 +1,101 @@
+\hypertarget{classHypermutation__global__errorrate}{}\section{Hypermutation\+\_\+global\+\_\+errorrate Class Reference}
+\label{classHypermutation__global__errorrate}\index{Hypermutation\+\_\+global\+\_\+errorrate@{Hypermutation\+\_\+global\+\_\+errorrate}}
+
+
+An additive (independent site) context dependent hypermutation model.  
+
+
+
+
+{\ttfamily \#include $<$Hypermutationglobalerrorrate.\+h$>$}
+
+Inheritance diagram for Hypermutation\+\_\+global\+\_\+errorrate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d3/da5/classHypermutation__global__errorrate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_aa99aa2d1031715691a0400609870fd12}\label{classHypermutation__global__errorrate_aa99aa2d1031715691a0400609870fd12}} 
+{\bfseries Hypermutation\+\_\+global\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a8446c82e50941957b918d5ffeefe54a2}\label{classHypermutation__global__errorrate_a8446c82e50941957b918d5ffeefe54a2}} 
+{\bfseries Hypermutation\+\_\+global\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double, std\+::vector$<$ double $>$)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_ac10eac00b3cbf526c11a3ac492a25e7d}\label{classHypermutation__global__errorrate_ac10eac00b3cbf526c11a3ac492a25e7d}} 
+{\bfseries Hypermutation\+\_\+global\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double, std\+::string)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_acb730ba80bd1c9e439b90350fc16a3a3}\label{classHypermutation__global__errorrate_acb730ba80bd1c9e439b90350fc16a3a3}} 
+{\bfseries Hypermutation\+\_\+global\+\_\+errorrate} (size\+\_\+t, Gene\+\_\+class, Gene\+\_\+class, double, std\+::vector$<$ double $>$, std\+::string)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a755458d801d03daef2f4b4f76a84df07}\label{classHypermutation__global__errorrate_a755458d801d03daef2f4b4f76a84df07}} 
+double {\bfseries compare\+\_\+sequences\+\_\+error\+\_\+prob} (double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a6374b1499163375fd8b5bf76661e1230}\label{classHypermutation__global__errorrate_a6374b1499163375fd8b5bf76661e1230}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_aee8570ae02a34a718b1f0b8e8d5957f2}\label{classHypermutation__global__errorrate_aee8570ae02a34a718b1f0b8e8d5957f2}} 
+void {\bfseries initialize} (const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_aa304b68d918690ef6a7332d5fc1294ef}\label{classHypermutation__global__errorrate_aa304b68d918690ef6a7332d5fc1294ef}} 
+void {\bfseries add\+\_\+to\+\_\+norm\+\_\+counter} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a5dd25d49b49187c25b88d3c4c6f90d14}\label{classHypermutation__global__errorrate_a5dd25d49b49187c25b88d3c4c6f90d14}} 
+void {\bfseries clean\+\_\+seq\+\_\+counters} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a66cc36b05f2e918e50467e624fdc5641}\label{classHypermutation__global__errorrate_a66cc36b05f2e918e50467e624fdc5641}} 
+void {\bfseries clean\+\_\+all\+\_\+counters} ()
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a0fc0c054d923559b7e153921aff66369}\label{classHypermutation__global__errorrate_a0fc0c054d923559b7e153921aff66369}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_ae3a5cce3c4791bd76f6bae05794604e2}\label{classHypermutation__global__errorrate_ae3a5cce3c4791bd76f6bae05794604e2}} 
+void {\bfseries set\+\_\+output\+\_\+\+Nmer\+\_\+stream} (std\+::string)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a5c4c403d7aefa5129cef992753d4dcce}\label{classHypermutation__global__errorrate_a5c4c403d7aefa5129cef992753d4dcce}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ {\bfseries copy} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a985e0277ffe8003caa5b5dcbc2c1dc80}\label{classHypermutation__global__errorrate_a985e0277ffe8003caa5b5dcbc2c1dc80}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_ae9cb6d261b6d46b5f903913debe32334}\label{classHypermutation__global__errorrate_ae9cb6d261b6d46b5f903913debe32334}} 
+\hyperlink{classHypermutation__global__errorrate}{Hypermutation\+\_\+global\+\_\+errorrate} \& {\bfseries operator+=} (\hyperlink{classHypermutation__global__errorrate}{Hypermutation\+\_\+global\+\_\+errorrate})
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a55637ff82bc7c8c313520c6666194b99}\label{classHypermutation__global__errorrate_a55637ff82bc7c8c313520c6666194b99}} 
+\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$ {\bfseries add\+\_\+checked} (\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_ae99d42204a7dd7315582150f4d474353}\label{classHypermutation__global__errorrate_ae99d42204a7dd7315582150f4d474353}} 
+const double \& {\bfseries get\+\_\+err\+\_\+rate\+\_\+upper\+\_\+bound} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_ace4d25eb33bddf01dbf1e771f8997b5d}\label{classHypermutation__global__errorrate_ace4d25eb33bddf01dbf1e771f8997b5d}} 
+void {\bfseries build\+\_\+upper\+\_\+bound\+\_\+matrix} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a7ae06e4aa431aefc2386a74939778c10}\label{classHypermutation__global__errorrate_a7ae06e4aa431aefc2386a74939778c10}} 
+int {\bfseries get\+\_\+number\+\_\+non\+\_\+zero\+\_\+likelihood\+\_\+seqs} () const
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a4783b1ad113de7c77712c996ff0a1b3c}\label{classHypermutation__global__errorrate_a4783b1ad113de7c77712c996ff0a1b3c}} 
+std\+::queue$<$ int $>$ {\bfseries generate\+\_\+errors} (std\+::string \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classHypermutation__global__errorrate_a10b75cea037da01947037a74b86a5653}\label{classHypermutation__global__errorrate_a10b75cea037da01947037a74b86a5653}} 
+uint64\+\_\+t {\bfseries generate\+\_\+random\+\_\+contributions} (double)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+An additive (independent site) context dependent hypermutation model. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+A specialization of the Error\+Rate class. Implements a context dependent hypermutation/error model with tunable context size. Nucleotide from the context are assumed to contribute independently to the mutability of the context through an additive logarithmic score. Such a model contains only 3\+N+1 parameters and allows to probe large context sizes. The identity of the resulting nucleotide after mutation is assumed to follow a uniform distribution. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hypermutationglobalerrorrate.\+h\item 
+Hypermutationglobalerrorrate.\+cpp\end{DoxyCompactItemize}

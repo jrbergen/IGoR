@@ -1,0 +1,51 @@
+\hypertarget{structEvent__realization}{}\section{Event\+\_\+realization Struct Reference}
+\label{structEvent__realization}\index{Event\+\_\+realization@{Event\+\_\+realization}}
+
+
+Unit that stores an event realization name, value and index.  
+
+
+
+
+{\ttfamily \#include $<$Rec\+\_\+\+Event.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEvent__realization_a9556f59a2fbb2969f5a3a47a4efaa7ce}\label{structEvent__realization_a9556f59a2fbb2969f5a3a47a4efaa7ce}} 
+{\bfseries Event\+\_\+realization} (std\+::string real\+\_\+name, int val\+\_\+int, std\+::string val\+\_\+str, \hyperlink{classInt__Str}{Int\+\_\+\+Str} val\+\_\+str\+\_\+int, int index\+\_\+val)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structEvent__realization_a54404700e07462fe27aa6a7a6faefab9}\label{structEvent__realization_a54404700e07462fe27aa6a7a6faefab9}} 
+const std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{structEvent__realization_a4d4c28a3c4e3caabce32d965a289181e}\label{structEvent__realization_a4d4c28a3c4e3caabce32d965a289181e}} 
+const int {\bfseries value\+\_\+int}
+\item 
+\mbox{\Hypertarget{structEvent__realization_a8ada58ba6fbd31d9c9c3b446581bd13f}\label{structEvent__realization_a8ada58ba6fbd31d9c9c3b446581bd13f}} 
+const std\+::string {\bfseries value\+\_\+str}
+\item 
+\mbox{\Hypertarget{structEvent__realization_af6ed01e953ba786146c6ffb80f03919a}\label{structEvent__realization_af6ed01e953ba786146c6ffb80f03919a}} 
+const \hyperlink{classInt__Str}{Int\+\_\+\+Str} {\bfseries value\+\_\+str\+\_\+int}
+\item 
+\mbox{\Hypertarget{structEvent__realization_aec4a3e1276c59e2585afa7313bc77202}\label{structEvent__realization_aec4a3e1276c59e2585afa7313bc77202}} 
+int {\bfseries index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unit that stores an event realization name, value and index. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Depending on the Rec\+Event type to which it belongs, the \hyperlink{structEvent__realization}{Event\+\_\+realization} must supply either a string (both std\+::string and Int\+Str) or an integer value. Integers values are e.\+g the number of deletions or insertions of \hyperlink{classInsertion}{Insertion} or \hyperlink{classDeletion}{Deletion} Rec\+Event String values are e.\+g realization of a Gene\+Choice \hyperlink{classRec__Event}{Rec\+\_\+\+Event}, and stands for the gene sequence. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Rec\+\_\+\+Event.\+h\end{DoxyCompactItemize}

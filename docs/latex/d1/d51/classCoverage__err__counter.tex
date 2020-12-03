@@ -1,0 +1,74 @@
+\hypertarget{classCoverage__err__counter}{}\section{Coverage\+\_\+err\+\_\+counter Class Reference}
+\label{classCoverage__err__counter}\index{Coverage\+\_\+err\+\_\+counter@{Coverage\+\_\+err\+\_\+counter}}
+
+
+Records the number of time each genomic position is observed with or without error.  
+
+
+
+
+{\ttfamily \#include $<$Coverageerrcounter.\+h$>$}
+
+Inheritance diagram for Coverage\+\_\+err\+\_\+counter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d1/d51/classCoverage__err__counter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a1744bf9764b432f500131439fd4afcfa}\label{classCoverage__err__counter_a1744bf9764b432f500131439fd4afcfa}} 
+{\bfseries Coverage\+\_\+err\+\_\+counter} (Gene\+\_\+class)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a86f1b7a29bf0244cfd56e564329725e1}\label{classCoverage__err__counter_a86f1b7a29bf0244cfd56e564329725e1}} 
+{\bfseries Coverage\+\_\+err\+\_\+counter} (Gene\+\_\+class, bool, bool)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a8d768e2bcf4c66d5b81c7cab85ac3701}\label{classCoverage__err__counter_a8d768e2bcf4c66d5b81c7cab85ac3701}} 
+{\bfseries Coverage\+\_\+err\+\_\+counter} (std\+::string, Gene\+\_\+class, bool)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_ab0c7dad32b9a61a83a3baf7f50fdab33}\label{classCoverage__err__counter_ab0c7dad32b9a61a83a3baf7f50fdab33}} 
+{\bfseries Coverage\+\_\+err\+\_\+counter} (std\+::string, Gene\+\_\+class, size\+\_\+t, bool, bool)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_afff8475b6327de18697e9d2068fb84b5}\label{classCoverage__err__counter_afff8475b6327de18697e9d2068fb84b5}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a333faaf6f622fa7cee77d34b226126d8}\label{classCoverage__err__counter_a333faaf6f622fa7cee77d34b226126d8}} 
+void {\bfseries initialize\+\_\+counter} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a6294a2c63795daeb6fea3506f27b19ac}\label{classCoverage__err__counter_a6294a2c63795daeb6fea3506f27b19ac}} 
+void {\bfseries count\+\_\+scenario} (long double, double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a20fde7a85141d52bd283583b0c12e030}\label{classCoverage__err__counter_a20fde7a85141d52bd283583b0c12e030}} 
+void {\bfseries count\+\_\+sequence} (double, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_a0d7a5ebfe75b5ff6ef5480b6a458abb2}\label{classCoverage__err__counter_a0d7a5ebfe75b5ff6ef5480b6a458abb2}} 
+void {\bfseries add\+\_\+checked} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_addfe9e5441d62616022e1c0d2e6391b6}\label{classCoverage__err__counter_addfe9e5441d62616022e1c0d2e6391b6}} 
+void {\bfseries dump\+\_\+sequence\+\_\+data} (int, int)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_abafd7cd49e08c50b5d768eacc3ec7df3}\label{classCoverage__err__counter_abafd7cd49e08c50b5d768eacc3ec7df3}} 
+void {\bfseries dump\+\_\+data\+\_\+summary} (int)
+\item 
+\mbox{\Hypertarget{classCoverage__err__counter_aa1b161227877e3cbb37fec90019ba906}\label{classCoverage__err__counter_aa1b161227877e3cbb37fec90019ba906}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$ {\bfseries copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Records the number of time each genomic position is observed with or without error. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+The \hyperlink{classCoverage__err__counter}{Coverage\+\_\+err\+\_\+counter} allows to record the number of times each genomic site is observed (coverage) and how many times a mismatch has been observed on it (error/mutation). The recording can be made at the single position level, as well as joint over positions duet,triplet etc (e.\+g the number of times two nucleotides were observed in the same scenario) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Coverageerrcounter.\+h\item 
+Coverageerrcounter.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classGenModel}{}\section{Gen\+Model Class Reference}
+\label{classGenModel}\index{Gen\+Model@{Gen\+Model}}
+
+
+High level V(\+D)J generative model.  
+
+
+
+
+{\ttfamily \#include $<$Gen\+Model.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGenModel_a6f196dae8f76a8042561af9e8b4ce132}\label{classGenModel_a6f196dae8f76a8042561af9e8b4ce132}} 
+{\bfseries Gen\+Model} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classGenModel_aaea2a3f119e50a2011022a63c47021ee}\label{classGenModel_aaea2a3f119e50a2011022a63c47021ee}} 
+{\bfseries Gen\+Model} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classGenModel_a7b885073eb010d69a07e1a18b062f330}\label{classGenModel_a7b885073eb010d69a07e1a18b062f330}} 
+{\bfseries Gen\+Model} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&, const std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classGenModel_a434080337f08b89ad939da5ff741f261}\label{classGenModel_a434080337f08b89ad939da5ff741f261}} 
+bool {\bfseries infer\+\_\+model} (const std\+::vector$<$ std\+::tuple$<$ int, std\+::string, std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$$>$$>$ \&sequences, const int iterations, const std\+::string path, bool fast\+\_\+iter, double likelihood\+\_\+threshold=1e-\/25, bool viterbi\+\_\+like=false)
+\item 
+\mbox{\Hypertarget{classGenModel_a80a7b9081e4214185e567c2c998412d6}\label{classGenModel_a80a7b9081e4214185e567c2c998412d6}} 
+bool {\bfseries infer\+\_\+model} (const std\+::vector$<$ std\+::tuple$<$ int, std\+::string, std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$$>$$>$ \&sequences, const int iterations, const std\+::string path, bool fast\+\_\+iter=true, double likelihood\+\_\+threshold=1e-\/25, double proba\+\_\+threshold\+\_\+factor=0.\+001)
+\item 
+\mbox{\Hypertarget{classGenModel_ac7d5765620fb1f23ee3e72a8d9e950b1}\label{classGenModel_ac7d5765620fb1f23ee3e72a8d9e950b1}} 
+bool {\bfseries infer\+\_\+model} (const std\+::vector$<$ std\+::tuple$<$ int, std\+::string, std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$$>$$>$ \&sequences, const int iterations, const std\+::string path, bool fast\+\_\+iter, double likelihood\+\_\+threshold, bool viterbi\+\_\+like, double proba\+\_\+threshold\+\_\+factor, double mean\+\_\+number\+\_\+seq\+\_\+err\+\_\+thresh=I\+N\+F\+I\+N\+I\+TY)
+\item 
+std\+::forward\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::queue$<$ std\+::queue$<$ int $>$ $>$ $>$ $>$ \hyperlink{classGenModel_a72c20c4c6d81b5c464bffad5acd36286}{generate\+\_\+sequences} (int, bool)
+\item 
+\mbox{\Hypertarget{classGenModel_ac842e68613ca1c9c9602aec9d6741bf8}\label{classGenModel_ac842e68613ca1c9c9602aec9d6741bf8}} 
+void {\bfseries generate\+\_\+sequences} (int, bool, std\+::string, std\+::string, std\+::list$<$ std\+::pair$<$ gen\+\_\+seq\+\_\+trans, std\+::shared\+\_\+ptr$<$ void $>$$>$$>$=std\+::list$<$ std\+::pair$<$ gen\+\_\+seq\+\_\+trans, std\+::shared\+\_\+ptr$<$ void $>$$>$$>$(), bool output\+\_\+only\+\_\+func=false, int=-\/1)
+\item 
+\mbox{\Hypertarget{classGenModel_a4cb4ecc06ce1b9d79d0098ead979dfa5}\label{classGenModel_a4cb4ecc06ce1b9d79d0098ead979dfa5}} 
+bool {\bfseries load\+\_\+genmodel} ()
+\item 
+\mbox{\Hypertarget{classGenModel_a40dd93d13152c53298ba015819376ac8}\label{classGenModel_a40dd93d13152c53298ba015819376ac8}} 
+bool {\bfseries write2txt} ()
+\item 
+\mbox{\Hypertarget{classGenModel_a6f0c770c5bffc14757c7b9c826b8ce77}\label{classGenModel_a6f0c770c5bffc14757c7b9c826b8ce77}} 
+bool {\bfseries readtxt} ()
+\item 
+\mbox{\Hypertarget{classGenModel_a78482004eb1084ec16aed161f35b8110}\label{classGenModel_a78482004eb1084ec16aed161f35b8110}} 
+void {\bfseries write\+\_\+seq2txt} (std\+::string, std\+::forward\+\_\+list$<$ std\+::string $>$)
+\item 
+\mbox{\Hypertarget{classGenModel_ad048697b32b2b1263088f98670f54d4b}\label{classGenModel_ad048697b32b2b1263088f98670f54d4b}} 
+void {\bfseries write\+\_\+seq\+\_\+real2txt} (std\+::string, std\+::string, std\+::forward\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::queue$<$ std\+::queue$<$ int $>$$>$$>$$>$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+High level V(\+D)J generative model. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Highest level class to model the V(\+D)J recombination and subsequent processes. It contains the model\textquotesingle{}s graph structure (\hyperlink{classModel__Parms}{Model\+\_\+\+Parms}), the associated probability distribution (Model\+\_\+\+Marginals). The \hyperlink{classGenModel}{Gen\+Model} class provides high level functions to perform inference / sequence annotation as well as generating random sequences from the model. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenModel_a72c20c4c6d81b5c464bffad5acd36286}\label{classGenModel_a72c20c4c6d81b5c464bffad5acd36286}} 
+\index{Gen\+Model@{Gen\+Model}!generate\+\_\+sequences@{generate\+\_\+sequences}}
+\index{generate\+\_\+sequences@{generate\+\_\+sequences}!Gen\+Model@{Gen\+Model}}
+\subsubsection{\texorpdfstring{generate\+\_\+sequences()}{generate\_sequences()}}
+{\footnotesize\ttfamily forward\+\_\+list$<$ pair$<$ string, queue$<$ queue$<$ int $>$ $>$ $>$ $>$ Gen\+Model\+::generate\+\_\+sequences (\begin{DoxyParamCaption}\item[{int}]{number\+\_\+seq,  }\item[{bool}]{generate\+\_\+errors }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]This function used to store generated sequences in memory, and quickly overloaded it for large number of generated sequences. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Gen\+Model.\+h\item 
+Gen\+Model.\+cpp\end{DoxyCompactItemize}

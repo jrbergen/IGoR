@@ -1,0 +1,177 @@
+\hypertarget{classModel__Parms}{}\section{Model\+\_\+\+Parms Class Reference}
+\label{classModel__Parms}\index{Model\+\_\+\+Parms@{Model\+\_\+\+Parms}}
+
+
+Implements I\+GoR\textquotesingle{}s Bayesian Network structure.  
+
+
+
+
+{\ttfamily \#include $<$Model\+\_\+\+Parms.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classModel__Parms_ac4f3da8649c2fe192428eb5ee06f750e}\label{classModel__Parms_ac4f3da8649c2fe192428eb5ee06f750e}} 
+{\bfseries Model\+\_\+\+Parms} (std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ event\+\_\+list)
+\item 
+\mbox{\Hypertarget{classModel__Parms_addb5234c48577ff55c8109b7eac39f90}\label{classModel__Parms_addb5234c48577ff55c8109b7eac39f90}} 
+{\bfseries Model\+\_\+\+Parms} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__Parms_af2e0e7e78112ab006df73263c030a8a2}\label{classModel__Parms_af2e0e7e78112ab006df73263c030a8a2}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+children} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_aca4f6ee88cb9b1e698fedd3568ed2d42}\label{classModel__Parms_aca4f6ee88cb9b1e698fedd3568ed2d42}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+children} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a7155a456f861e9dd637559cde8e02629}\label{classModel__Parms_a7155a456f861e9dd637559cde8e02629}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+children} (Rec\+\_\+\+Event\+\_\+name) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a86aa613ae499f4dc488988b1d94190ef}\label{classModel__Parms_a86aa613ae499f4dc488988b1d94190ef}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+parents} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a1ee88017afe923c018f37b7b81d89e51}\label{classModel__Parms_a1ee88017afe923c018f37b7b81d89e51}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+parents} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a40eb3cd76edd547e0773b9e5693f188f}\label{classModel__Parms_a40eb3cd76edd547e0773b9e5693f188f}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+parents} (Rec\+\_\+\+Event\+\_\+name) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a0b3fa455ad128a66a3641b2ae9094382}\label{classModel__Parms_a0b3fa455ad128a66a3641b2ae9094382}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+ancestors} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a94924dccdfe120c924ae4e52923fb3cb}\label{classModel__Parms_a94924dccdfe120c924ae4e52923fb3cb}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+ancestors} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$) const
+\item 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ \hyperlink{classModel__Parms_a01c910fc4e11151fbfba2a65a681e8f9}{get\+\_\+ancestors} (Rec\+\_\+\+Event\+\_\+name) const
+\begin{DoxyCompactList}\small\item\em Get all ancestors of the supplied event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classModel__Parms_a59b1b99380a528442237afb6caa6b359}\label{classModel__Parms_a59b1b99380a528442237afb6caa6b359}} 
+bool {\bfseries add\+\_\+edge} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$, \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a11cf943348d51a2fcf41cd188d894176}\label{classModel__Parms_a11cf943348d51a2fcf41cd188d894176}} 
+bool {\bfseries add\+\_\+edge} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_ae8db22179d7fb8d3a6dee3d33b44ca0a}\label{classModel__Parms_ae8db22179d7fb8d3a6dee3d33b44ca0a}} 
+bool {\bfseries add\+\_\+edge} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a153aa9084de841aff8ac9a831e950ad5}\label{classModel__Parms_a153aa9084de841aff8ac9a831e950ad5}} 
+bool {\bfseries remove\+\_\+edge} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$, \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_ab9d1dcee5701f56d8416d3aa33d929c0}\label{classModel__Parms_ab9d1dcee5701f56d8416d3aa33d929c0}} 
+bool {\bfseries remove\+\_\+edge} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a369c0b392bfc057c1c3efcc83e7b4b26}\label{classModel__Parms_a369c0b392bfc057c1c3efcc83e7b4b26}} 
+bool {\bfseries remove\+\_\+edge} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a6073c8f6311a4446d42b682b84d2ecec}\label{classModel__Parms_a6073c8f6311a4446d42b682b84d2ecec}} 
+void {\bfseries invert\+\_\+edge} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$, \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_aca84c4e807243145648a6452dd82a868}\label{classModel__Parms_aca84c4e807243145648a6452dd82a868}} 
+void {\bfseries invert\+\_\+edge} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a18088567a179092eb130e7f3c8a5bc01}\label{classModel__Parms_a18088567a179092eb130e7f3c8a5bc01}} 
+void {\bfseries invert\+\_\+edge} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a0e2b4a894a13e02696df646365172ba7}\label{classModel__Parms_a0e2b4a894a13e02696df646365172ba7}} 
+bool {\bfseries has\+\_\+edge} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$, \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a398f2942f3fc372b4c9a91cf0fd372d4}\label{classModel__Parms_a398f2942f3fc372b4c9a91cf0fd372d4}} 
+bool {\bfseries has\+\_\+edge} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_ac0c51016846248f8f69cbc1a0142a39e}\label{classModel__Parms_ac0c51016846248f8f69cbc1a0142a39e}} 
+bool {\bfseries has\+\_\+edge} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_abab9bfd283db8005a9176b3edc55dac1}\label{classModel__Parms_abab9bfd283db8005a9176b3edc55dac1}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+roots} () const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a940ea182140c8622ebaea8c011357b12}\label{classModel__Parms_a940ea182140c8622ebaea8c011357b12}} 
+bool {\bfseries add\+\_\+event} (std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a1d1b7427a012f3a4ec73103a5891150d}\label{classModel__Parms_a1d1b7427a012f3a4ec73103a5891150d}} 
+bool {\bfseries add\+\_\+event} (\hyperlink{classRec__Event}{Rec\+\_\+\+Event} $\ast$)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a2751229768122ec169138d8a1b3dd9bc}\label{classModel__Parms_a2751229768122ec169138d8a1b3dd9bc}} 
+std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+model\+\_\+queue} () const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a8211a247ec1daaf456e2d6d8851fb452}\label{classModel__Parms_a8211a247ec1daaf456e2d6d8851fb452}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries get\+\_\+event\+\_\+pointer} (const Rec\+\_\+\+Event\+\_\+name \&) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a1c53a9d1f12e67b3381f6b0dc682c7d5}\label{classModel__Parms_a1c53a9d1f12e67b3381f6b0dc682c7d5}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries get\+\_\+event\+\_\+pointer} (const std\+::string \&, bool by\+\_\+nickname) const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a8cf0634b051622d2b20a13425f9ce0ce}\label{classModel__Parms_a8cf0634b051622d2b20a13425f9ce0ce}} 
+void {\bfseries update\+\_\+edge\+\_\+event\+\_\+name} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name)
+\item 
+\mbox{\Hypertarget{classModel__Parms_aef5dadc120d0bb8c752d1b95b3f78282}\label{classModel__Parms_aef5dadc120d0bb8c752d1b95b3f78282}} 
+void {\bfseries write\+\_\+model\+\_\+parms} (std\+::string)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a13abf2de6e1e7a54b9abdbeee7dac1fc}\label{classModel__Parms_a13abf2de6e1e7a54b9abdbeee7dac1fc}} 
+void {\bfseries read\+\_\+model\+\_\+parms} (std\+::string)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a8b5f3fdedcdd179c9aef8b3ea72adfde}\label{classModel__Parms_a8b5f3fdedcdd179c9aef8b3ea72adfde}} 
+void {\bfseries set\+\_\+fixed\+\_\+all\+\_\+events} (bool)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a932066fcc6e498ad0840edc9717ba707}\label{classModel__Parms_a932066fcc6e498ad0840edc9717ba707}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+event\+\_\+list} () const
+\item 
+\mbox{\Hypertarget{classModel__Parms_a57cf0b6d54c708cb631d82073a88b94b}\label{classModel__Parms_a57cf0b6d54c708cb631d82073a88b94b}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, \hyperlink{structAdjacency__list}{Adjacency\+\_\+list} $>$ {\bfseries get\+\_\+edges} () const
+\item 
+\mbox{\Hypertarget{classModel__Parms_aa119e86fc5efb59fcaa34714713424d2}\label{classModel__Parms_aa119e86fc5efb59fcaa34714713424d2}} 
+const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+events\+\_\+map} () const
+\item 
+\mbox{\Hypertarget{classModel__Parms_acdea46f93da680af2333e020b1addf0a}\label{classModel__Parms_acdea46f93da680af2333e020b1addf0a}} 
+std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries get\+\_\+events\+\_\+map} ()
+\item 
+\mbox{\Hypertarget{classModel__Parms_a1657f1ad89a3f4b8e23a202c6229463a}\label{classModel__Parms_a1657f1ad89a3f4b8e23a202c6229463a}} 
+void {\bfseries set\+\_\+error\+\_\+ratep} (\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$Er\+\_\+r)
+\item 
+\mbox{\Hypertarget{classModel__Parms_acafaeeac35d0bf44fa44e59381f6b490}\label{classModel__Parms_acafaeeac35d0bf44fa44e59381f6b490}} 
+void {\bfseries set\+\_\+error\+\_\+ratep} (std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ Er\+\_\+r)
+\item 
+\mbox{\Hypertarget{classModel__Parms_a5dab98783e734a12b28a4f7c3c479f95}\label{classModel__Parms_a5dab98783e734a12b28a4f7c3c479f95}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ {\bfseries get\+\_\+err\+\_\+rate\+\_\+p} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements I\+GoR\textquotesingle{}s Bayesian Network structure. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Implements I\+GoR\textquotesingle{}s Bayesian Network structure through an acyclic directed graph. Together with the recombination model topology it also contains the error model. This class implements various methods to extract information from the graph structure such as the order in which Rec\+Events must be processed provided the topological constraints. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel__Parms_a01c910fc4e11151fbfba2a65a681e8f9}\label{classModel__Parms_a01c910fc4e11151fbfba2a65a681e8f9}} 
+\index{Model\+\_\+\+Parms@{Model\+\_\+\+Parms}!get\+\_\+ancestors@{get\+\_\+ancestors}}
+\index{get\+\_\+ancestors@{get\+\_\+ancestors}!Model\+\_\+\+Parms@{Model\+\_\+\+Parms}}
+\subsubsection{\texorpdfstring{get\+\_\+ancestors()}{get\_ancestors()}}
+{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ Model\+\_\+\+Parms\+::get\+\_\+ancestors (\begin{DoxyParamCaption}\item[{Rec\+\_\+\+Event\+\_\+name}]{event\+\_\+name }\end{DoxyParamCaption}) const}
+
+
+
+Get all ancestors of the supplied event. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em event\+\_\+name} & The event whom we seek the ancestors \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of the event ancestors
+\end{DoxyReturn}
+Get all ancestors of the supplied event. Ancestors are all events higher than the considered event in the genealogy and with link of any degree to it 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Model\+\_\+\+Parms.\+h\item 
+Model\+\_\+\+Parms.\+cpp\end{DoxyCompactItemize}

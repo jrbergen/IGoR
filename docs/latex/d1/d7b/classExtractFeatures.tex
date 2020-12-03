@@ -1,0 +1,201 @@
+\hypertarget{classExtractFeatures}{}\section{Extract\+Features Class Reference}
+\label{classExtractFeatures}\index{Extract\+Features@{Extract\+Features}}
+
+
+Class to extract sequences features (e.\+g. C\+D\+R3) of sequences using alignment and V, J anchors information.  
+
+
+
+
+{\ttfamily \#include $<$Extract\+Features.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_a7b288f4e64f388d34f1e0cd63cd2dcf6}\label{classExtractFeatures_a7b288f4e64f388d34f1e0cd63cd2dcf6}} 
+{\bfseries Extract\+Features} (const \hyperlink{classExtractFeatures}{Extract\+Features} \&orig)
+\item 
+void \hyperlink{classExtractFeatures_a70b5cef5ad48234649b114dea3eba942}{load\+\_\+\+V\+Jgenomic\+Templates} (vector$<$ pair$<$ string, string $>$$>$ v\+\_\+genomic, vector$<$ pair$<$ string, string $>$$>$ j\+\_\+genomic)
+\begin{DoxyCompactList}\small\item\em Function to map the template\+ID and the sequence for V and J. \end{DoxyCompactList}\item 
+void \hyperlink{classExtractFeatures_a05f401f4f39adb7f33c2b1e3f7f51807}{load\+\_\+\+V\+Janchors} (string fln\+V\+\_\+\+C\+D\+R3\+\_\+anchors, string fln\+J\+\_\+\+C\+D\+R3\+\_\+anchors)
+\begin{DoxyCompactList}\small\item\em load data files into Gene\+Features functor class \end{DoxyCompactList}\item 
+void \hyperlink{classExtractFeatures_ace6992bcea2ed1008b5a103291f039c4}{load\+\_\+\+V\+Janchors} (unordered\+\_\+map$<$ string, size\+\_\+t $>$ fln\+V\+\_\+\+C\+D\+R3\+\_\+anchors, unordered\+\_\+map$<$ string, size\+\_\+t $>$ fln\+J\+\_\+\+C\+D\+R3\+\_\+anchors)
+\begin{DoxyCompactList}\small\item\em load data files into Gene\+Features functor class \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classExtractFeatures_ac04edfcc22b8b13bdfe24f8786f26df5}\label{classExtractFeatures_ac04edfcc22b8b13bdfe24f8786f26df5}} 
+void {\bfseries print\+\_\+\+Vgenomic\+Templates} ()
+\item 
+\mbox{\Hypertarget{classExtractFeatures_a29cb642660337a3fbaa0446d835ef1fa}\label{classExtractFeatures_a29cb642660337a3fbaa0446d835ef1fa}} 
+void {\bfseries print\+\_\+\+Jgenomic\+Templates} ()
+\item 
+\mbox{\Hypertarget{classExtractFeatures_a79fcd50fc536ec897d7bae410afa1284}\label{classExtractFeatures_a79fcd50fc536ec897d7bae410afa1284}} 
+void {\bfseries set\+\_\+sorted\+\_\+alignments} (unordered\+\_\+map$<$ int, pair$<$ string, unordered\+\_\+map$<$ Gene\+\_\+class, vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$$>$$>$ $\ast$pointer)
+\item 
+\hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} \hyperlink{classExtractFeatures_af1dc5d4f1cb7e15227fbafcd2df662d2}{extract\+C\+D\+R3} (int seq\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Get the C\+D\+R3 as an instance of \hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} given the V and J \hyperlink{structAlignment__data}{Alignment\+\_\+data} structs. \end{DoxyCompactList}\item 
+int \hyperlink{classExtractFeatures_a5d1a024949397722223c20d3fc5e6fd4}{get\+V\+Anchor4\+Seq} (string seq\+\_\+str, \hyperlink{structAlignment__data}{Alignment\+\_\+data} v\+\_\+alig)
+\item 
+int \hyperlink{classExtractFeatures_a5738a890c09d3cb72ea01693f624b593}{get\+J\+Anchor4\+Seq} (string seq\+\_\+str, \hyperlink{structAlignment__data}{Alignment\+\_\+data} j\+\_\+alig)
+\item 
+string \hyperlink{classExtractFeatures_aa117a4841d8db720b13c0e0b9028579d}{generate\+C\+D\+R3\+\_\+csv\+\_\+line} (\hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} cdr3\+Input\+Seq)
+\begin{DoxyCompactList}\small\item\em Function to generate a C\+D\+R3 string line to be printed on a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_aa67318cf2f9b155b533a4ab816fdd8ee}\label{classExtractFeatures_aa67318cf2f9b155b533a4ab816fdd8ee}} 
+unordered\+\_\+map$<$ string, string $>$ {\bfseries U\+Map\+\_\+v\+\_\+genomic}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_adf3a835b87f9f274a9b29f830fb7c406}\label{classExtractFeatures_adf3a835b87f9f274a9b29f830fb7c406}} 
+unordered\+\_\+map$<$ string, string $>$ {\bfseries U\+Map\+\_\+j\+\_\+genomic}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_a11a5252b3e1bd2c12b816dbf3f1cff37}\label{classExtractFeatures_a11a5252b3e1bd2c12b816dbf3f1cff37}} 
+unordered\+\_\+map$<$ string, size\+\_\+t $>$ {\bfseries U\+Map\+\_\+v\+\_\+\+C\+D\+R3\+\_\+anchors}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_af524e782f4053ae78c0d12374b6ae6f3}\label{classExtractFeatures_af524e782f4053ae78c0d12374b6ae6f3}} 
+unordered\+\_\+map$<$ string, size\+\_\+t $>$ {\bfseries U\+Map\+\_\+j\+\_\+\+C\+D\+R3\+\_\+anchors}
+\item 
+\mbox{\Hypertarget{classExtractFeatures_a8f90e1dce7c28bc411cebfd72cd63257}\label{classExtractFeatures_a8f90e1dce7c28bc411cebfd72cd63257}} 
+unordered\+\_\+map$<$ int, pair$<$ string, unordered\+\_\+map$<$ Gene\+\_\+class, vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$ $>$ $>$ $>$ $\ast$ {\bfseries p\+\_\+sorted\+\_\+alignments}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to extract sequences features (e.\+g. C\+D\+R3) of sequences using alignment and V, J anchors information. 
+
+\begin{DoxyAuthor}{Author}
+C. Olivares 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classExtractFeatures_af1dc5d4f1cb7e15227fbafcd2df662d2}\label{classExtractFeatures_af1dc5d4f1cb7e15227fbafcd2df662d2}} 
+\index{Extract\+Features@{Extract\+Features}!extract\+C\+D\+R3@{extract\+C\+D\+R3}}
+\index{extract\+C\+D\+R3@{extract\+C\+D\+R3}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{extract\+C\+D\+R3()}{extractCDR3()}}
+{\footnotesize\ttfamily \hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} Extract\+Features\+::extract\+C\+D\+R3 (\begin{DoxyParamCaption}\item[{int}]{seq\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Get the C\+D\+R3 as an instance of \hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} given the V and J \hyperlink{structAlignment__data}{Alignment\+\_\+data} structs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seq\+\_\+index} & \\
+\hline
+{\em V\+\_\+alignment} & \\
+\hline
+{\em J\+\_\+alignment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classExtractFeatures_aa117a4841d8db720b13c0e0b9028579d}\label{classExtractFeatures_aa117a4841d8db720b13c0e0b9028579d}} 
+\index{Extract\+Features@{Extract\+Features}!generate\+C\+D\+R3\+\_\+csv\+\_\+line@{generate\+C\+D\+R3\+\_\+csv\+\_\+line}}
+\index{generate\+C\+D\+R3\+\_\+csv\+\_\+line@{generate\+C\+D\+R3\+\_\+csv\+\_\+line}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{generate\+C\+D\+R3\+\_\+csv\+\_\+line()}{generateCDR3\_csv\_line()}}
+{\footnotesize\ttfamily string Extract\+Features\+::generate\+C\+D\+R3\+\_\+csv\+\_\+line (\begin{DoxyParamCaption}\item[{\hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data}}]{cdr3\+Input\+Seq }\end{DoxyParamCaption})}
+
+
+
+Function to generate a C\+D\+R3 string line to be printed on a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cdr3\+Input\+Seq} & is \hyperlink{classCDR3SeqData}{C\+D\+R3\+Seq\+Data} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+csvline line string to be printed on a file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classExtractFeatures_a5738a890c09d3cb72ea01693f624b593}\label{classExtractFeatures_a5738a890c09d3cb72ea01693f624b593}} 
+\index{Extract\+Features@{Extract\+Features}!get\+J\+Anchor4\+Seq@{get\+J\+Anchor4\+Seq}}
+\index{get\+J\+Anchor4\+Seq@{get\+J\+Anchor4\+Seq}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{get\+J\+Anchor4\+Seq()}{getJAnchor4Seq()}}
+{\footnotesize\ttfamily int Extract\+Features\+::get\+J\+Anchor4\+Seq (\begin{DoxyParamCaption}\item[{string}]{seq\+\_\+str,  }\item[{\hyperlink{structAlignment__data}{Alignment\+\_\+data}}]{j\+\_\+alig }\end{DoxyParamCaption})}
+
+Calculate the J anchor in reference to the input sequence 
+\begin{DoxyParams}{Parameters}
+{\em seq\+\_\+str} & \\
+\hline
+{\em j\+\_\+alig} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cdr3\+\_\+j\+\_\+read\+\_\+anch the anchor in reference to the input sequence. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classExtractFeatures_a5d1a024949397722223c20d3fc5e6fd4}\label{classExtractFeatures_a5d1a024949397722223c20d3fc5e6fd4}} 
+\index{Extract\+Features@{Extract\+Features}!get\+V\+Anchor4\+Seq@{get\+V\+Anchor4\+Seq}}
+\index{get\+V\+Anchor4\+Seq@{get\+V\+Anchor4\+Seq}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{get\+V\+Anchor4\+Seq()}{getVAnchor4Seq()}}
+{\footnotesize\ttfamily int Extract\+Features\+::get\+V\+Anchor4\+Seq (\begin{DoxyParamCaption}\item[{string}]{seq\+\_\+str,  }\item[{\hyperlink{structAlignment__data}{Alignment\+\_\+data}}]{v\+\_\+alig }\end{DoxyParamCaption})}
+
+Calculate the V anchor in reference to the input sequence 
+\begin{DoxyParams}{Parameters}
+{\em seq\+\_\+str} & \\
+\hline
+{\em v\+\_\+alig} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cdr3\+\_\+v\+\_\+read\+\_\+anch the anchor in reference to the input sequence. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classExtractFeatures_a05f401f4f39adb7f33c2b1e3f7f51807}\label{classExtractFeatures_a05f401f4f39adb7f33c2b1e3f7f51807}} 
+\index{Extract\+Features@{Extract\+Features}!load\+\_\+\+V\+Janchors@{load\+\_\+\+V\+Janchors}}
+\index{load\+\_\+\+V\+Janchors@{load\+\_\+\+V\+Janchors}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{load\+\_\+\+V\+Janchors()}{load\_VJanchors()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Extract\+Features\+::load\+\_\+\+V\+Janchors (\begin{DoxyParamCaption}\item[{string}]{fln\+V\+\_\+\+C\+D\+R3\+\_\+anchors,  }\item[{string}]{fln\+J\+\_\+\+C\+D\+R3\+\_\+anchors }\end{DoxyParamCaption})}
+
+
+
+load data files into Gene\+Features functor class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fln\+V\+\_\+\+C\+D\+R3\+\_\+anchors} & C\+D\+R3 anchors filename for V genes \\
+\hline
+{\em fln\+J\+\_\+\+C\+D\+R3\+\_\+anchors} & C\+D\+R3 anchors filename for J genes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classExtractFeatures_ace6992bcea2ed1008b5a103291f039c4}\label{classExtractFeatures_ace6992bcea2ed1008b5a103291f039c4}} 
+\index{Extract\+Features@{Extract\+Features}!load\+\_\+\+V\+Janchors@{load\+\_\+\+V\+Janchors}}
+\index{load\+\_\+\+V\+Janchors@{load\+\_\+\+V\+Janchors}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{load\+\_\+\+V\+Janchors()}{load\_VJanchors()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Extract\+Features\+::load\+\_\+\+V\+Janchors (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ string, size\+\_\+t $>$}]{v\+\_\+\+C\+D\+R3\+\_\+anchors,  }\item[{unordered\+\_\+map$<$ string, size\+\_\+t $>$}]{j\+\_\+\+C\+D\+R3\+\_\+anchors }\end{DoxyParamCaption})}
+
+
+
+load data files into Gene\+Features functor class 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+\+C\+D\+R3\+\_\+anchors} & unordered\+\_\+map of sequence description and position for V genes C\+D\+R3 anchors. \\
+\hline
+{\em j\+\_\+\+C\+D\+R3\+\_\+anchors} & unordered\+\_\+map of sequence description and position for J genes C\+D\+R3 anchors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classExtractFeatures_a70b5cef5ad48234649b114dea3eba942}\label{classExtractFeatures_a70b5cef5ad48234649b114dea3eba942}} 
+\index{Extract\+Features@{Extract\+Features}!load\+\_\+\+V\+Jgenomic\+Templates@{load\+\_\+\+V\+Jgenomic\+Templates}}
+\index{load\+\_\+\+V\+Jgenomic\+Templates@{load\+\_\+\+V\+Jgenomic\+Templates}!Extract\+Features@{Extract\+Features}}
+\subsubsection{\texorpdfstring{load\+\_\+\+V\+Jgenomic\+Templates()}{load\_VJgenomicTemplates()}}
+{\footnotesize\ttfamily void Extract\+Features\+::load\+\_\+\+V\+Jgenomic\+Templates (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ string, string $>$$>$}]{v\+\_\+genomic,  }\item[{vector$<$ pair$<$ string, string $>$$>$}]{j\+\_\+genomic }\end{DoxyParamCaption})}
+
+
+
+Function to map the template\+ID and the sequence for V and J. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+genomic} & vector with the genomic templates for V genes \\
+\hline
+{\em j\+\_\+genomic} & vector with the genomic templates for J genes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Extract\+Features.\+h\item 
+Extract\+Features.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+\begin{theindex}
+
+  \item {add\+\_\+to\+\_\+marginals}
+    \subitem {Dinucl\+\_\+markov}, \hyperpage{20}
+    \subitem {Gene\+\_\+choice}, \hyperpage{33}
+  \item {Adjacency\+\_\+list}, \hyperpage{9}
+  \item {Aligner}, \hyperpage{9}
+    \subitem {Aligner}, \hyperpage{11}
+  \item {Alignment\+\_\+data}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Best\+\_\+scenarios\+\_\+counter}, \hyperpage{13}
+
+  \indexspace
+
+  \item {C\+D\+R3\+Seq\+Data}, \hyperpage{14}
+  \item {Counter}, \hyperpage{14}
+  \item {Coverage\+\_\+err\+\_\+counter}, \hyperpage{16}
+
+  \indexspace
+
+  \item {D\+\_\+position\+\_\+comparator}, \hyperpage{17}
+  \item {Deletion}, \hyperpage{17}
+    \subitem {iterate}, \hyperpage{18}
+  \item {Dinucl\+\_\+markov}, \hyperpage{19}
+    \subitem {add\+\_\+to\+\_\+marginals}, \hyperpage{20}
+    \subitem {iterate}, \hyperpage{20}
+    \subitem {update\+\_\+event\+\_\+internal\+\_\+probas}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {Enum\+\_\+fast\+\_\+memory\+\_\+dual\+\_\+key\+\_\+map$<$ K1, K2, V $>$}, 
+		\hyperpage{22}
+  \item {Enum\+\_\+fast\+\_\+memory\+\_\+map$<$ K, V $>$}, 
+		\hyperpage{23}
+  \item {Error\+\_\+rate}, \hyperpage{23}
+  \item {Errors\+\_\+counter}, \hyperpage{25}
+  \item {Event\+\_\+comparator}, \hyperpage{26}
+  \item {Event\+\_\+realization}, \hyperpage{26}
+  \item {extract\+C\+D\+R3}
+    \subitem {Extract\+Features}, \hyperpage{28}
+  \item {Extract\+Features}, \hyperpage{27}
+    \subitem {extract\+C\+D\+R3}, \hyperpage{28}
+    \subitem {generate\+C\+D\+R3\+\_\+csv\+\_\+line}, \hyperpage{28}
+    \subitem {get\+J\+Anchor4\+Seq}, \hyperpage{29}
+    \subitem {get\+V\+Anchor4\+Seq}, \hyperpage{29}
+    \subitem {load\+\_\+\+V\+Janchors}, \hyperpage{29, 30}
+    \subitem {load\+\_\+\+V\+Jgenomic\+Templates}, \hyperpage{30}
+
+  \indexspace
+
+  \item {gen\+\_\+\+C\+D\+R3\+\_\+data}, \hyperpage{31}
+  \item {Gen\+Model}, \hyperpage{34}
+    \subitem {generate\+\_\+sequences}, \hyperpage{35}
+  \item {Gene\+\_\+choice}, \hyperpage{31}
+    \subitem {add\+\_\+to\+\_\+marginals}, \hyperpage{33}
+    \subitem {iterate}, \hyperpage{33}
+  \item {generate\+\_\+sequences}
+    \subitem {Gen\+Model}, \hyperpage{35}
+  \item {generate\+C\+D\+R3\+\_\+csv\+\_\+line}
+    \subitem {Extract\+Features}, \hyperpage{28}
+  \item {get\+\_\+ancestors}
+    \subitem {Model\+\_\+\+Parms}, \hyperpage{48}
+  \item {get\+J\+Anchor4\+Seq}
+    \subitem {Extract\+Features}, \hyperpage{29}
+  \item {get\+V\+Anchor4\+Seq}
+    \subitem {Extract\+Features}, \hyperpage{29}
+
+  \indexspace
+
+  \item {Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate}, 
+		\hyperpage{38}
+  \item {Hypermutation\+\_\+global\+\_\+errorrate}, \hyperpage{39}
+
+  \indexspace
+
+  \item {Insertion}, \hyperpage{40}
+    \subitem {iterate}, \hyperpage{42}
+  \item {Int\+\_\+\+Str}, \hyperpage{43}
+  \item {inverse\+\_\+offset\+\_\+comparator}, \hyperpage{44}
+  \item {iterate}
+    \subitem {Deletion}, \hyperpage{18}
+    \subitem {Dinucl\+\_\+markov}, \hyperpage{20}
+    \subitem {Gene\+\_\+choice}, \hyperpage{33}
+    \subitem {Insertion}, \hyperpage{42}
+    \subitem {Rec\+\_\+\+Event}, \hyperpage{53}
+
+  \indexspace
+
+  \item {load\+\_\+\+V\+Janchors}
+    \subitem {Extract\+Features}, \hyperpage{29, 30}
+  \item {load\+\_\+\+V\+Jgenomic\+Templates}
+    \subitem {Extract\+Features}, \hyperpage{30}
+
+  \indexspace
+
+  \item {Matrix$<$ T $>$}, \hyperpage{44}
+  \item {Model\+\_\+\+Parms}, \hyperpage{46}
+    \subitem {get\+\_\+ancestors}, \hyperpage{48}
+  \item {Model\+\_\+marginals}, \hyperpage{45}
+    \subitem {set\+\_\+realization\+\_\+proba}, \hyperpage{46}
+
+  \indexspace
+
+  \item {null\+\_\+delete$<$ T $>$}, \hyperpage{48}
+
+  \indexspace
+
+  \item {offset\+\_\+comp}, \hyperpage{49}
+
+  \indexspace
+
+  \item {Pgen\+\_\+counter}, \hyperpage{49}
+
+  \indexspace
+
+  \item {Rec\+\_\+\+Event}, \hyperpage{50}
+    \subitem {iterate}, \hyperpage{53}
+    \subitem {update\+\_\+event\+\_\+internal\+\_\+probas}, 
+		\hyperpage{54}
+
+  \indexspace
+
+  \item {set\+\_\+realization\+\_\+proba}
+    \subitem {Model\+\_\+marginals}, \hyperpage{46}
+  \item {Single\+\_\+error\+\_\+rate}, \hyperpage{55}
+  \item {std\+::hash$<$ Event\+\_\+safety $>$}, \hyperpage{36}
+  \item {std\+::hash$<$ Gene\+\_\+class $>$}, \hyperpage{36}
+  \item {std\+::hash$<$ Int\+\_\+\+Str $>$}, \hyperpage{36}
+  \item {std\+::hash$<$ Seq\+\_\+type $>$}, \hyperpage{37}
+  \item {std\+::hash$<$ std\+::pair$<$ Gene\+\_\+class, Seq\+\_\+side $>$ $>$}, 
+		\hyperpage{37}
+  \item {std\+::hash$<$ std\+::pair$<$ Seq\+\_\+type, Seq\+\_\+side $>$ $>$}, 
+		\hyperpage{37}
+  \item {std\+::hash$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$ $>$}, 
+		\hyperpage{37}
+
+  \indexspace
+
+  \item {update\+\_\+event\+\_\+internal\+\_\+probas}
+    \subitem {Dinucl\+\_\+markov}, \hyperpage{22}
+    \subitem {Rec\+\_\+\+Event}, \hyperpage{54}
+
+\end{theindex}

@@ -1,0 +1,88 @@
+\hypertarget{classCounter}{}\section{Counter Class Reference}
+\label{classCounter}\index{Counter@{Counter}}
+
+
+Scenario statistics recording abstract class.  
+
+
+
+
+{\ttfamily \#include $<$Counter.\+h$>$}
+
+Inheritance diagram for Counter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.794872cm]{d1/d24/classCounter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCounter_a1ff0e754623c886cae1b76ab93a96faa}\label{classCounter_a1ff0e754623c886cae1b76ab93a96faa}} 
+{\bfseries Counter} (const std\+::string \&path=\char`\"{}/tmp/\char`\"{}, bool last\+\_\+iter=false)
+\item 
+\mbox{\Hypertarget{classCounter_a13bbd01b9db02df144a4b303d0a8fc9a}\label{classCounter_a13bbd01b9db02df144a4b303d0a8fc9a}} 
+virtual std\+::string {\bfseries type} () const =0
+\item 
+\mbox{\Hypertarget{classCounter_a56a86bc9430be6e0e9c8cf612b42a857}\label{classCounter_a56a86bc9430be6e0e9c8cf612b42a857}} 
+virtual void {\bfseries initialize\+\_\+counter} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)=0
+\item 
+\mbox{\Hypertarget{classCounter_a2aa0558b76714d3e5e11fee7dc310639}\label{classCounter_a2aa0558b76714d3e5e11fee7dc310639}} 
+virtual void {\bfseries count\+\_\+scenario} (long double, double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classCounter_a2ceec8c6539b9912d1a6eb72a8a9d895}\label{classCounter_a2ceec8c6539b9912d1a6eb72a8a9d895}} 
+virtual void {\bfseries count\+\_\+sequence} (double, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classCounter_a1cbad4a20ed2bc666923c52f1f7de07c}\label{classCounter_a1cbad4a20ed2bc666923c52f1f7de07c}} 
+virtual void {\bfseries add\+\_\+to\+\_\+counter} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$)
+\item 
+\mbox{\Hypertarget{classCounter_a108d1d8b84d1a4ec02e82d115bb090f0}\label{classCounter_a108d1d8b84d1a4ec02e82d115bb090f0}} 
+virtual void {\bfseries add\+\_\+checked} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$)=0
+\item 
+\mbox{\Hypertarget{classCounter_a6d82f5fca039e761791d4e393ec3a75a}\label{classCounter_a6d82f5fca039e761791d4e393ec3a75a}} 
+virtual void {\bfseries dump\+\_\+sequence\+\_\+data} (int, int)
+\item 
+\mbox{\Hypertarget{classCounter_a0bee773e60d141f7bf5d1dbd90d04c40}\label{classCounter_a0bee773e60d141f7bf5d1dbd90d04c40}} 
+virtual void {\bfseries dump\+\_\+data\+\_\+summary} (int)
+\item 
+\mbox{\Hypertarget{classCounter_a6b04c1e240adf83cae0c85050d85355c}\label{classCounter_a6b04c1e240adf83cae0c85050d85355c}} 
+bool {\bfseries is\+\_\+last\+\_\+iter\+\_\+only} () const
+\item 
+\mbox{\Hypertarget{classCounter_a19b291f7a6b19e93221bd73df296291f}\label{classCounter_a19b291f7a6b19e93221bd73df296291f}} 
+std\+::string {\bfseries get\+\_\+path\+\_\+to\+\_\+files} () const
+\item 
+\mbox{\Hypertarget{classCounter_a2ec3d7154e44d3ef38a2c295eef53f26}\label{classCounter_a2ec3d7154e44d3ef38a2c295eef53f26}} 
+void {\bfseries set\+\_\+path\+\_\+to\+\_\+files} (const std\+::string \&new\+\_\+path)
+\item 
+\mbox{\Hypertarget{classCounter_a1320d7111338de2b1764b09dc023f833}\label{classCounter_a1320d7111338de2b1764b09dc023f833}} 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$ {\bfseries copy} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCounter_af15bb7f590112d08e29d194baf3e536e}\label{classCounter_af15bb7f590112d08e29d194baf3e536e}} 
+std\+::string {\bfseries path\+\_\+to\+\_\+file}
+\item 
+\mbox{\Hypertarget{classCounter_aac0e458aae2f27e6a41570562087a347}\label{classCounter_aac0e458aae2f27e6a41570562087a347}} 
+bool {\bfseries last\+\_\+iter\+\_\+only}
+\item 
+\mbox{\Hypertarget{classCounter_ac44c16637ced1d03608d10703bcaaccd}\label{classCounter_ac44c16637ced1d03608d10703bcaaccd}} 
+bool {\bfseries fstreams\+\_\+created}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Scenario statistics recording abstract class. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+The \hyperlink{classCounter}{Counter} abstract class provides an interface to collect individual scenarios statistics and aggregate them in various ways. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Counter.\+h\item 
+Counter.\+cpp\end{DoxyCompactItemize}

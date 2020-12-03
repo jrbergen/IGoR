@@ -1,0 +1,53 @@
+\hypertarget{structgen__CDR3__data}{}\section{gen\+\_\+\+C\+D\+R3\+\_\+data Struct Reference}
+\label{structgen__CDR3__data}\index{gen\+\_\+\+C\+D\+R3\+\_\+data@{gen\+\_\+\+C\+D\+R3\+\_\+data}}
+
+
+{\ttfamily \#include $<$Gen\+Model.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_a84bc07450f621034cd1f7f2db9cc2270}\label{structgen__CDR3__data_a84bc07450f621034cd1f7f2db9cc2270}} 
+{\bfseries gen\+\_\+\+C\+D\+R3\+\_\+data} (const std\+::unordered\+\_\+map$<$ std\+::string, size\+\_\+t $>$ \&v\+\_\+anchors\+\_\+indices, const std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&v\+\_\+reals, size\+\_\+t v\+\_\+event\+\_\+pos, const std\+::unordered\+\_\+map$<$ std\+::string, size\+\_\+t $>$ \&j\+\_\+anchors\+\_\+indices, const std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&j\+\_\+reals, size\+\_\+t j\+\_\+event\+\_\+pos, std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ output\+\_\+stream\+\_\+ptr=std\+::shared\+\_\+ptr$<$ std\+::ostream $>$(\&std\+::cout, \hyperlink{structnull__delete}{null\+\_\+delete}$<$ std\+::ostream $>$()))
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_a7f92109048f58a87470b73caacebde6d}\label{structgen__CDR3__data_a7f92109048f58a87470b73caacebde6d}} 
+std\+::map$<$ int, std\+::tuple$<$ std\+::string, size\+\_\+t, size\+\_\+t, std\+::string $>$ $>$ {\bfseries v\+\_\+anchors}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_ac3afce3cadecec66b19eaa8fe7cd02e0}\label{structgen__CDR3__data_ac3afce3cadecec66b19eaa8fe7cd02e0}} 
+size\+\_\+t {\bfseries v\+\_\+event\+\_\+queue\+\_\+position}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_a74593eab758b80924d97f46ec9946157}\label{structgen__CDR3__data_a74593eab758b80924d97f46ec9946157}} 
+std\+::map$<$ int, std\+::tuple$<$ std\+::string, size\+\_\+t, size\+\_\+t, std\+::string $>$ $>$ {\bfseries j\+\_\+anchors}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_af902c78f5810850245e5afcb0e9d183e}\label{structgen__CDR3__data_af902c78f5810850245e5afcb0e9d183e}} 
+size\+\_\+t {\bfseries j\+\_\+event\+\_\+queue\+\_\+position}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_aaa951daedffb5700881229b510c9b39f}\label{structgen__CDR3__data_aaa951daedffb5700881229b510c9b39f}} 
+std\+::shared\+\_\+ptr$<$ std\+::ostream $>$ {\bfseries output\+\_\+stream}
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_acde307f0050ad91e75bd9b63a6252c5e}\label{structgen__CDR3__data_acde307f0050ad91e75bd9b63a6252c5e}} 
+bool {\bfseries output\+\_\+nt\+\_\+\+C\+D\+R3} = true
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_a0fb27bb73315b9c76d20171fa21d2f7e}\label{structgen__CDR3__data_a0fb27bb73315b9c76d20171fa21d2f7e}} 
+bool {\bfseries output\+\_\+anchors\+\_\+found} = true
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_aa6fb61bcdef0cf0f386cc83bba01e69a}\label{structgen__CDR3__data_aa6fb61bcdef0cf0f386cc83bba01e69a}} 
+bool {\bfseries output\+\_\+inframe} = true
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_aa42f2dd27ef5f7f7ae14391197f4af1c}\label{structgen__CDR3__data_aa42f2dd27ef5f7f7ae14391197f4af1c}} 
+bool {\bfseries output\+\_\+aa\+\_\+\+C\+D\+R3} = false
+\item 
+\mbox{\Hypertarget{structgen__CDR3__data_a469689d75e4111ac6a9aa5c57a3ee67d}\label{structgen__CDR3__data_a469689d75e4111ac6a9aa5c57a3ee67d}} 
+bool {\bfseries output\+\_\+productive} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Hardcode a data structure for the function extracting C\+D\+R3s in generated sequences 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Gen\+Model.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\hypertarget{classDeletion}{}\section{Deletion Class Reference}
+\label{classDeletion}\index{Deletion@{Deletion}}
+
+
+\hyperlink{classDeletion}{Deletion} recombination event.  
+
+
+
+
+{\ttfamily \#include $<$Deletion.\+h$>$}
+
+Inheritance diagram for Deletion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d2/df0/classDeletion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDeletion_a21f9224d32bb4b21eb8ca19a42d65b9b}\label{classDeletion_a21f9224d32bb4b21eb8ca19a42d65b9b}} 
+{\bfseries Deletion} (Gene\+\_\+class, Seq\+\_\+side, std\+::pair$<$ int, int $>$)
+\item 
+\mbox{\Hypertarget{classDeletion_a494ec4114211df7bf0a7737510709d3c}\label{classDeletion_a494ec4114211df7bf0a7737510709d3c}} 
+{\bfseries Deletion} (std\+::forward\+\_\+list$<$ int $>$)
+\item 
+\mbox{\Hypertarget{classDeletion_a9de4159829dc5435b8cd4dfc2962d303}\label{classDeletion_a9de4159829dc5435b8cd4dfc2962d303}} 
+{\bfseries Deletion} (Gene\+\_\+class, Seq\+\_\+side)
+\item 
+\mbox{\Hypertarget{classDeletion_a794476abcfa448bb4f38d0f3666cc91d}\label{classDeletion_a794476abcfa448bb4f38d0f3666cc91d}} 
+{\bfseries Deletion} (Gene\+\_\+class, Seq\+\_\+side, std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{structEvent__realization}{Event\+\_\+realization} $>$ \&)
+\item 
+\mbox{\Hypertarget{classDeletion_ae4e145381e8c4e51a66dd83f871d395a}\label{classDeletion_ae4e145381e8c4e51a66dd83f871d395a}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries copy} ()
+\item 
+void \hyperlink{classDeletion_a2479968a06062e87027f8acef2631211}{iterate} (double \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, const std\+::string \&, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&, Marginal\+\_\+array\+\_\+p \&, const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\item 
+\mbox{\Hypertarget{classDeletion_a6ae411d002a887a322b0a1ff7234cffc}\label{classDeletion_a6ae411d002a887a322b0a1ff7234cffc}} 
+void {\bfseries add\+\_\+realization} (int)
+\item 
+\mbox{\Hypertarget{classDeletion_aec37ad3c8f6140f5e6968b3b0df0271a}\label{classDeletion_aec37ad3c8f6140f5e6968b3b0df0271a}} 
+std\+::queue$<$ int $>$ {\bfseries draw\+\_\+random\+\_\+realization} (const Marginal\+\_\+array\+\_\+p \&, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::unordered\+\_\+map$<$ Seq\+\_\+type, std\+::string $>$ \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classDeletion_a8e8dea0b2b7e8c1def855a758765b706}\label{classDeletion_a8e8dea0b2b7e8c1def855a758765b706}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classDeletion_aa4a0bb992b76d6a5984c26b3a70cb7be}\label{classDeletion_aa4a0bb992b76d6a5984c26b3a70cb7be}} 
+void {\bfseries initialize\+\_\+event} (std\+::unordered\+\_\+set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classDeletion_a2dee705a5c9b878dbccfef27c5305c7a}\label{classDeletion_a2dee705a5c9b878dbccfef27c5305c7a}} 
+void {\bfseries add\+\_\+to\+\_\+marginals} (long double, Marginal\+\_\+array\+\_\+p \&) const
+\item 
+\mbox{\Hypertarget{classDeletion_a497f8a478a3c1065b11741b2bcadca0a}\label{classDeletion_a497f8a478a3c1065b11741b2bcadca0a}} 
+bool {\bfseries has\+\_\+effect\+\_\+on} (Seq\+\_\+type) const
+\item 
+\mbox{\Hypertarget{classDeletion_aa28f61f8a3657da735d96ac007d61380}\label{classDeletion_aa28f61f8a3657da735d96ac007d61380}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int \&seq\+\_\+len) const
+\item 
+\mbox{\Hypertarget{classDeletion_a8439fb5c579245ea6038578fcfae0c86}\label{classDeletion_a8439fb5c579245ea6038578fcfae0c86}} 
+void {\bfseries initialize\+\_\+\+Len\+\_\+proba\+\_\+bound} (std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDeletion_ad4a26da5a0e142c5135c983af6d042d6}\label{classDeletion_ad4a26da5a0e142c5135c983af6d042d6}} 
+class {\bfseries Coverage\+\_\+err\+\_\+counter}
+\item 
+\mbox{\Hypertarget{classDeletion_ad5a47907bf54eec60bc584c426aaca7f}\label{classDeletion_ad5a47907bf54eec60bc584c426aaca7f}} 
+class {\bfseries Hypermutation\+\_\+global\+\_\+errorrate}
+\item 
+\mbox{\Hypertarget{classDeletion_a5ff5d89d255ca8ca355c6da8c4be7f68}\label{classDeletion_a5ff5d89d255ca8ca355c6da8c4be7f68}} 
+class {\bfseries Hypermutation\+\_\+full\+\_\+\+Nmer\+\_\+errorrate}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classDeletion}{Deletion} recombination event. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+The \hyperlink{classDeletion}{Deletion} Rec\+Event models deletions of one genomic fragment on a given side. Deletions can be either positive or negative (= Palindromic insertions)
+
+By construction the corresponding Gene\+Choice must have been explored first. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDeletion_a2479968a06062e87027f8acef2631211}\label{classDeletion_a2479968a06062e87027f8acef2631211}} 
+\index{Deletion@{Deletion}!iterate@{iterate}}
+\index{iterate@{iterate}!Deletion@{Deletion}}
+\subsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily void Deletion\+::iterate (\begin{DoxyParamCaption}\item[{double \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&}]{,  }\item[{const std\+::string \&}]{,  }\item[{const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&}]{,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&}]{,  }\item[{std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&}]{,  }\item[{double \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+General\+: Loop over all possible number of deletions for a given gene on a given sequence side
+
+Specific\+: -\/\+First check whether any of these number of deletions is possible given the current position and number of deletions on other genes -\/\+Loop over \# of deletions in decreasing order T\+H\+IS IS A T\+E\+M\+P\+O\+R\+A\+RY F\+I\+X// //\+F\+I\+X\+ME
+
+T\+H\+IS IS A T\+E\+M\+P\+O\+R\+A\+RY F\+I\+X// //\+F\+I\+X\+ME
+
+T\+H\+IS IS A T\+E\+M\+P\+O\+R\+A\+RY F\+I\+X// //\+F\+I\+X\+ME
+
+Implements \hyperlink{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}{Rec\+\_\+\+Event}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Deletion.\+h\item 
+Deletion.\+cpp\end{DoxyCompactItemize}

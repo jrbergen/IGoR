@@ -1,0 +1,83 @@
+\hypertarget{classSingle__error__rate}{}\section{Single\+\_\+error\+\_\+rate Class Reference}
+\label{classSingle__error__rate}\index{Single\+\_\+error\+\_\+rate@{Single\+\_\+error\+\_\+rate}}
+
+
+Independent single nucleotide error model.  
+
+
+
+
+{\ttfamily \#include $<$Singleerrorrate.\+h$>$}
+
+Inheritance diagram for Single\+\_\+error\+\_\+rate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/de1/classSingle__error__rate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a687686cd400935103647436b27984330}\label{classSingle__error__rate_a687686cd400935103647436b27984330}} 
+{\bfseries Single\+\_\+error\+\_\+rate} (double)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a142d9c5ad52f1f6fa20565c42158a426}\label{classSingle__error__rate_a142d9c5ad52f1f6fa20565c42158a426}} 
+double {\bfseries compare\+\_\+sequences\+\_\+error\+\_\+prob} (double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a0d4fb62ed45df43f95d7f85e5150639f}\label{classSingle__error__rate_a0d4fb62ed45df43f95d7f85e5150639f}} 
+void {\bfseries update} ()
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_afb8ba0c35a20ff9c83d71eadc21013c7}\label{classSingle__error__rate_afb8ba0c35a20ff9c83d71eadc21013c7}} 
+void {\bfseries add\+\_\+to\+\_\+norm\+\_\+counter} ()
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a0d6d6f3ce09bf9a9a01426557bc11075}\label{classSingle__error__rate_a0d6d6f3ce09bf9a9a01426557bc11075}} 
+void {\bfseries clean\+\_\+seq\+\_\+counters} ()
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_ac5d91ac7d2fbd646210a04a7f56df00d}\label{classSingle__error__rate_ac5d91ac7d2fbd646210a04a7f56df00d}} 
+\hyperlink{classSingle__error__rate}{Single\+\_\+error\+\_\+rate} {\bfseries operator+} (\hyperlink{classSingle__error__rate}{Single\+\_\+error\+\_\+rate})
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a34faf13d5f4a2fca1c2acc8bc69b23c7}\label{classSingle__error__rate_a34faf13d5f4a2fca1c2acc8bc69b23c7}} 
+\hyperlink{classSingle__error__rate}{Single\+\_\+error\+\_\+rate} \& {\bfseries operator+=} (\hyperlink{classSingle__error__rate}{Single\+\_\+error\+\_\+rate})
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a5779a63cac826ae4c170cf61f1d7a13f}\label{classSingle__error__rate_a5779a63cac826ae4c170cf61f1d7a13f}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_aa61f2543536c155ec67e1f03e3bda900}\label{classSingle__error__rate_aa61f2543536c155ec67e1f03e3bda900}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ {\bfseries copy} () const
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_af1d43b6aab1fdc5302d3a26479f83e7f}\label{classSingle__error__rate_af1d43b6aab1fdc5302d3a26479f83e7f}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_ada7e9b73b47acff05366d2fefeb4a1f2}\label{classSingle__error__rate_ada7e9b73b47acff05366d2fefeb4a1f2}} 
+\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$ {\bfseries add\+\_\+checked} (\hyperlink{classError__rate}{Error\+\_\+rate} $\ast$)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_ac378550cb29fb1449ce17a6184a553e9}\label{classSingle__error__rate_ac378550cb29fb1449ce17a6184a553e9}} 
+const double \& {\bfseries get\+\_\+err\+\_\+rate\+\_\+upper\+\_\+bound} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a3bff9288c541e920e76ba34c50e6b16a}\label{classSingle__error__rate_a3bff9288c541e920e76ba34c50e6b16a}} 
+void {\bfseries build\+\_\+upper\+\_\+bound\+\_\+matrix} (size\+\_\+t, size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a629d245c987f0b9b7cd6f80aeea6d69c}\label{classSingle__error__rate_a629d245c987f0b9b7cd6f80aeea6d69c}} 
+int {\bfseries get\+\_\+number\+\_\+non\+\_\+zero\+\_\+likelihood\+\_\+seqs} () const
+\item 
+\mbox{\Hypertarget{classSingle__error__rate_a536ce634d01c251251961bd463a57da4}\label{classSingle__error__rate_a536ce634d01c251251961bd463a57da4}} 
+std\+::queue$<$ int $>$ {\bfseries generate\+\_\+errors} (std\+::string \&, std\+::mt19937\+\_\+64 \&) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Independent single nucleotide error model. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Simplest instance of the Error\+Rate family. Models errors/mutations as a Bernouilli process with a global rate independent of position and context. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Singleerrorrate.\+h\item 
+Singleerrorrate.\+cpp\end{DoxyCompactItemize}

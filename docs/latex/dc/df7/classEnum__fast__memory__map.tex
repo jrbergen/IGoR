@@ -1,0 +1,64 @@
+\hypertarget{classEnum__fast__memory__map}{}\section{Enum\+\_\+fast\+\_\+memory\+\_\+map$<$ K, V $>$ Class Template Reference}
+\label{classEnum__fast__memory__map}\index{Enum\+\_\+fast\+\_\+memory\+\_\+map$<$ K, V $>$@{Enum\+\_\+fast\+\_\+memory\+\_\+map$<$ K, V $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a5768f2fe09e8b6b28524e5d57e528db4}\label{classEnum__fast__memory__map_a5768f2fe09e8b6b28524e5d57e528db4}} 
+{\bfseries Enum\+\_\+fast\+\_\+memory\+\_\+map} (int defined\+\_\+range)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_aabda7589988ec4ba12e534824bac1a0b}\label{classEnum__fast__memory__map_aabda7589988ec4ba12e534824bac1a0b}} 
+V \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const K \&key)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a8be7bd8e594d849c4a4e72962d1b9d08}\label{classEnum__fast__memory__map_a8be7bd8e594d849c4a4e72962d1b9d08}} 
+V \& {\bfseries at} (const K \&key)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a405c1341fdd7e71f177d5cec26b7d5a4}\label{classEnum__fast__memory__map_a405c1341fdd7e71f177d5cec26b7d5a4}} 
+V \& {\bfseries at} (const K \&key, int memory\+\_\+layer)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_afe6a230119ff19eb56811e15855020b1}\label{classEnum__fast__memory__map_afe6a230119ff19eb56811e15855020b1}} 
+const V \& {\bfseries at} (const K \&key, int memory\+\_\+layer) const
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a4ea2b110272ea18098050e4c155d5de8}\label{classEnum__fast__memory__map_a4ea2b110272ea18098050e4c155d5de8}} 
+int {\bfseries get\+\_\+current\+\_\+memory\+\_\+layer} (const K \&key)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_ac8c698a71ed90c3f1777f0b5f5ebc2d0}\label{classEnum__fast__memory__map_ac8c698a71ed90c3f1777f0b5f5ebc2d0}} 
+void {\bfseries get\+\_\+all\+\_\+current\+\_\+memory\+\_\+layer} (int $\ast$memory\+\_\+layers\+\_\+recipient)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_aaf4503d857d4f1604349b60389067547}\label{classEnum__fast__memory__map_aaf4503d857d4f1604349b60389067547}} 
+bool {\bfseries exist} (const K \&key)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a212e70bcf61d38dcb50c3ec7eba3da0f}\label{classEnum__fast__memory__map_a212e70bcf61d38dcb50c3ec7eba3da0f}} 
+void {\bfseries request\+\_\+memory\+\_\+layer} (const K \&key)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a962bd0b3b0a0270cca9c9053c40f8969}\label{classEnum__fast__memory__map_a962bd0b3b0a0270cca9c9053c40f8969}} 
+void {\bfseries set\+\_\+value} (const K \&key, const V \&value, int memory\+\_\+layer)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a5b20c600c1f4fd5af350b563077beaee}\label{classEnum__fast__memory__map_a5b20c600c1f4fd5af350b563077beaee}} 
+void {\bfseries multiply\+\_\+all} (double \&prod\+\_\+operand, int $\ast$memory\+\_\+adresses)
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a2ec1969546a9299456933b12bbeb7482}\label{classEnum__fast__memory__map_a2ec1969546a9299456933b12bbeb7482}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a9cce1750aaa19696c6c1566fa611e8ee}\label{classEnum__fast__memory__map_a9cce1750aaa19696c6c1566fa611e8ee}} 
+void {\bfseries init\+\_\+first\+\_\+layer} (V value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a4da6cc492811180fb2f2d67b212e1958}\label{classEnum__fast__memory__map_a4da6cc492811180fb2f2d67b212e1958}} 
+V $\ast$ {\bfseries value\+\_\+ptr\+\_\+arr}
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_ac4d1ca254ac90be516156dc953f21867}\label{classEnum__fast__memory__map_ac4d1ca254ac90be516156dc953f21867}} 
+int $\ast$ {\bfseries memory\+\_\+layer\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a25ee5ea5e21c8e55d5b3a4bbdcf3bbf0}\label{classEnum__fast__memory__map_a25ee5ea5e21c8e55d5b3a4bbdcf3bbf0}} 
+int {\bfseries max\+\_\+layer}
+\item 
+\mbox{\Hypertarget{classEnum__fast__memory__map_a9ec7fa4ada841d40cdde86a1bf15ce40}\label{classEnum__fast__memory__map_a9ec7fa4ada841d40cdde86a1bf15ce40}} 
+size\+\_\+t {\bfseries range}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utils.\+h\end{DoxyCompactItemize}

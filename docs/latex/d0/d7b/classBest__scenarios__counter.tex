@@ -1,0 +1,92 @@
+\hypertarget{classBest__scenarios__counter}{}\section{Best\+\_\+scenarios\+\_\+counter Class Reference}
+\label{classBest__scenarios__counter}\index{Best\+\_\+scenarios\+\_\+counter@{Best\+\_\+scenarios\+\_\+counter}}
+
+
+Records the N best scenarios realizations and mismatches.  
+
+
+
+
+{\ttfamily \#include $<$Bestscenarioscounter.\+h$>$}
+
+Inheritance diagram for Best\+\_\+scenarios\+\_\+counter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/d7b/classBest__scenarios__counter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a1b02d09cb90d48901973a522879dbe11}\label{classBest__scenarios__counter_a1b02d09cb90d48901973a522879dbe11}} 
+{\bfseries Best\+\_\+scenarios\+\_\+counter} (size\+\_\+t)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a825bfa56893618db010d7bdd0a05fe11}\label{classBest__scenarios__counter_a825bfa56893618db010d7bdd0a05fe11}} 
+{\bfseries Best\+\_\+scenarios\+\_\+counter} (size\+\_\+t, bool)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a114a7eb723e63731f210436068ffa786}\label{classBest__scenarios__counter_a114a7eb723e63731f210436068ffa786}} 
+{\bfseries Best\+\_\+scenarios\+\_\+counter} (size\+\_\+t, std\+::string)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_aabb594bc5fe34333cd31d4e33ddf7f3e}\label{classBest__scenarios__counter_aabb594bc5fe34333cd31d4e33ddf7f3e}} 
+{\bfseries Best\+\_\+scenarios\+\_\+counter} (size\+\_\+t, std\+::string, bool)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_abb0a6a0997f579afb2ae3824a90ad2d0}\label{classBest__scenarios__counter_abb0a6a0997f579afb2ae3824a90ad2d0}} 
+std\+::string {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_ae5027552709dfc54fe972dfaae5e5a76}\label{classBest__scenarios__counter_ae5027552709dfc54fe972dfaae5e5a76}} 
+void {\bfseries initialize\+\_\+counter} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_ad5c78463063ea4223c489ca2e8678b31}\label{classBest__scenarios__counter_ad5c78463063ea4223c489ca2e8678b31}} 
+void {\bfseries count\+\_\+scenario} (long double, double, const std\+::string \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, const \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a93d8eed7e5c5fafd7d9064492ac83a79}\label{classBest__scenarios__counter_a93d8eed7e5c5fafd7d9064492ac83a79}} 
+void {\bfseries count\+\_\+sequence} (double, const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a860792c667b329c6877c3cc11b312488}\label{classBest__scenarios__counter_a860792c667b329c6877c3cc11b312488}} 
+void {\bfseries add\+\_\+checked} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a9daf95a4846e7392cbf036c3aaf7cd73}\label{classBest__scenarios__counter_a9daf95a4846e7392cbf036c3aaf7cd73}} 
+void {\bfseries dump\+\_\+sequence\+\_\+data} (int, int)
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_af4457d69d9405e3ebd9c4ef359d40f57}\label{classBest__scenarios__counter_af4457d69d9405e3ebd9c4ef359d40f57}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$ {\bfseries copy} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_abd0c0c2c1a2ac326b3897c7e9badad21}\label{classBest__scenarios__counter_abd0c0c2c1a2ac326b3897c7e9badad21}} 
+size\+\_\+t {\bfseries n\+\_\+scenarios\+\_\+counted}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a81323e4e4b6a1175da9370992297209a}\label{classBest__scenarios__counter_a81323e4e4b6a1175da9370992297209a}} 
+std\+::shared\+\_\+ptr$<$ std\+::ofstream $>$ {\bfseries output\+\_\+scenario\+\_\+file\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_abe8aa0d16e4fa62041df503a040e9428}\label{classBest__scenarios__counter_abe8aa0d16e4fa62041df503a040e9428}} 
+std\+::queue$<$ std\+::vector$<$ int $>$ $>$ {\bfseries single\+\_\+scenario\+\_\+realizations\+\_\+queue}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_aaf1861459f6ef157ef87a3c53380d917}\label{classBest__scenarios__counter_aaf1861459f6ef157ef87a3c53380d917}} 
+std\+::list$<$ int $>$ {\bfseries single\+\_\+scenario\+\_\+mismatches\+\_\+list}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_a6bb048e0cdacc5a6659a8c535c3c76fc}\label{classBest__scenarios__counter_a6bb048e0cdacc5a6659a8c535c3c76fc}} 
+std\+::vector$<$ std\+::tuple$<$ double, std\+::queue$<$ std\+::vector$<$ int $>$ $>$, std\+::list$<$ int $>$ $>$ $>$ {\bfseries best\+\_\+scenarios\+\_\+vec}
+\item 
+\mbox{\Hypertarget{classBest__scenarios__counter_ab397a09b97161f3db1eb962759f4079d}\label{classBest__scenarios__counter_ab397a09b97161f3db1eb962759f4079d}} 
+std\+::forward\+\_\+list$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ $>$ {\bfseries event\+\_\+fw\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Records the N best scenarios realizations and mismatches. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Implementation of the \hyperlink{classCounter}{Counter} abstract class. Records the N most likely scenario realizations and mismatches and append it to a semicolon separated file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bestscenarioscounter.\+h\item 
+Bestscenarioscounter.\+cpp\end{DoxyCompactItemize}

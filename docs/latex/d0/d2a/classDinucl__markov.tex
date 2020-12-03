@@ -1,0 +1,172 @@
+\hypertarget{classDinucl__markov}{}\section{Dinucl\+\_\+markov Class Reference}
+\label{classDinucl__markov}\index{Dinucl\+\_\+markov@{Dinucl\+\_\+markov}}
+
+
+Dinucleotide insertion Markov model.  
+
+
+Inheritance diagram for Dinucl\+\_\+markov\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d0/d2a/classDinucl__markov}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a7c4b9c77a45d66a4bb540a12cc75073a}\label{classDinucl__markov_a7c4b9c77a45d66a4bb540a12cc75073a}} 
+{\bfseries Dinucl\+\_\+markov} (Gene\+\_\+class)
+\item 
+\mbox{\Hypertarget{classDinucl__markov_aef20fac2861787b1f03143dbd4a8224d}\label{classDinucl__markov_aef20fac2861787b1f03143dbd4a8224d}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$ {\bfseries copy} ()
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a5080c4cf4545622858c5afb7c3130fa9}\label{classDinucl__markov_a5080c4cf4545622858c5afb7c3130fa9}} 
+int {\bfseries size} () const
+\item 
+void \hyperlink{classDinucl__markov_ace49d0da113be7d77ad0d4c3b8152c3d}{iterate} (double \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, const std\+::string \&, const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&, Marginal\+\_\+array\+\_\+p \&, const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&, std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, double \&, double \&)
+\begin{DoxyCompactList}\small\item\em Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classDinucl__markov_aaeb38e8ed71cd1faaf6dfdbbf621d200}\label{classDinucl__markov_aaeb38e8ed71cd1faaf6dfdbbf621d200}} 
+void {\bfseries add\+\_\+realization} (int)
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a8b15545357ac34b0adc7c142036238df}\label{classDinucl__markov_a8b15545357ac34b0adc7c142036238df}} 
+std\+::queue$<$ int $>$ {\bfseries draw\+\_\+random\+\_\+realization} (const Marginal\+\_\+array\+\_\+p \&, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, std\+::unordered\+\_\+map$<$ Seq\+\_\+type, std\+::string $>$ \&, std\+::mt19937\+\_\+64 \&) const
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a911fd57910ede07e9f41a0be488f3366}\label{classDinucl__markov_a911fd57910ede07e9f41a0be488f3366}} 
+void {\bfseries write2txt} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a1992380f533087999d03c3cb8bd05e72}\label{classDinucl__markov_a1992380f533087999d03c3cb8bd05e72}} 
+void {\bfseries ind\+\_\+normalize} (Marginal\+\_\+array\+\_\+p \&, size\+\_\+t) const
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a8373decc16c87577a47711bc20fb41bc}\label{classDinucl__markov_a8373decc16c87577a47711bc20fb41bc}} 
+void {\bfseries initialize\+\_\+event} (std\+::unordered\+\_\+set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&, \hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&, std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$, \hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&, \hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&)
+\item 
+void \hyperlink{classDinucl__markov_a63fd37e31c3e32fee54dc26146bc3fac}{add\+\_\+to\+\_\+marginals} (long double, Marginal\+\_\+array\+\_\+p \&) const
+\item 
+void \hyperlink{classDinucl__markov_a8da33acb0a389a0a4c845a69c11b173c}{update\+\_\+event\+\_\+internal\+\_\+probas} (const Marginal\+\_\+array\+\_\+p \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&)
+\item 
+\mbox{\Hypertarget{classDinucl__markov_ad19e4458a31477f56f18150e7ea3f731}\label{classDinucl__markov_ad19e4458a31477f56f18150e7ea3f731}} 
+double $\ast$ {\bfseries get\+\_\+updated\+\_\+ptr} ()
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a146a953912fbdd13dda74693b2972981}\label{classDinucl__markov_a146a953912fbdd13dda74693b2972981}} 
+void {\bfseries initialize\+\_\+crude\+\_\+scenario\+\_\+proba\+\_\+bound} (double \&, std\+::forward\+\_\+list$<$ double $\ast$$>$ \&, const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&)
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a00c9b729b4984421c444f9543d241f6c}\label{classDinucl__markov_a00c9b729b4984421c444f9543d241f6c}} 
+bool {\bfseries has\+\_\+effect\+\_\+on} (Seq\+\_\+type) const
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a93c1b5d8073d5456419e87452f800027}\label{classDinucl__markov_a93c1b5d8073d5456419e87452f800027}} 
+void {\bfseries iterate\+\_\+initialize\+\_\+\+Len\+\_\+proba} (Seq\+\_\+type considered\+\_\+junction, std\+::map$<$ int, double $>$ \&length\+\_\+best\+\_\+proba\+\_\+map, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, double \&scenario\+\_\+proba, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map, \hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&constructed\+\_\+sequences, int \&seq\+\_\+len) const
+\item 
+\mbox{\Hypertarget{classDinucl__markov_a7fc4210d8943892078c6eeec7ddcfbd8}\label{classDinucl__markov_a7fc4210d8943892078c6eeec7ddcfbd8}} 
+void {\bfseries initialize\+\_\+\+Len\+\_\+proba\+\_\+bound} (std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&model\+\_\+queue, const Marginal\+\_\+array\+\_\+p \&model\+\_\+parameters\+\_\+point, \hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&base\+\_\+index\+\_\+map)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Dinucleotide insertion Markov model. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Models a Markov chain dictating the identity of inserted nucleotides in the inserted region. We assume a low error frequency and almost flat dinucleotide model regime such that we use an euristic to extract the most likely realization. This choice has been made because the full handling through a forward algorithm would not be able to cope with e.\+g context dependent errors.
+
+By construction the \hyperlink{classInsertion}{Insertion} event must have been explored first 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDinucl__markov_a63fd37e31c3e32fee54dc26146bc3fac}\label{classDinucl__markov_a63fd37e31c3e32fee54dc26146bc3fac}} 
+\index{Dinucl\+\_\+markov@{Dinucl\+\_\+markov}!add\+\_\+to\+\_\+marginals@{add\+\_\+to\+\_\+marginals}}
+\index{add\+\_\+to\+\_\+marginals@{add\+\_\+to\+\_\+marginals}!Dinucl\+\_\+markov@{Dinucl\+\_\+markov}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+marginals()}{add\_to\_marginals()}}
+{\footnotesize\ttfamily void Dinucl\+\_\+markov\+::add\+\_\+to\+\_\+marginals (\begin{DoxyParamCaption}\item[{long double}]{scenario\+\_\+proba,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{updated\+\_\+marginals }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]Will only count realizations of unambiguous nucleotides (realization indices$>$=0 since they are set to -\/1 in iterate\+\_\+common) \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classRec__Event}{Rec\+\_\+\+Event}.
+
+\mbox{\Hypertarget{classDinucl__markov_ace49d0da113be7d77ad0d4c3b8152c3d}\label{classDinucl__markov_ace49d0da113be7d77ad0d4c3b8152c3d}} 
+\index{Dinucl\+\_\+markov@{Dinucl\+\_\+markov}!iterate@{iterate}}
+\index{iterate@{iterate}!Dinucl\+\_\+markov@{Dinucl\+\_\+markov}}
+\subsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily void Dinucl\+\_\+markov\+::iterate (\begin{DoxyParamCaption}\item[{double \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Downstream\+\_\+scenario\+\_\+proba\+\_\+bound\+\_\+map} \&}]{,  }\item[{const std\+::string \&}]{,  }\item[{const \hyperlink{classInt__Str}{Int\+\_\+\+Str} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Index\+\_\+map} \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$ \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Next\+\_\+event\+\_\+ptr} $>$ \&}]{,  }\item[{Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Gene\+\_\+class, std\+::vector$<$ \hyperlink{structAlignment__data}{Alignment\+\_\+data} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Seq\+\_\+type\+\_\+str\+\_\+p\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__dual__key__map}{Seq\+\_\+offsets\+\_\+map} \&}]{,  }\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classError__rate}{Error\+\_\+rate} $>$ \&}]{,  }\item[{std\+::map$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \hyperlink{classCounter}{Counter} $>$$>$ \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ std\+::tuple$<$ Event\+\_\+type, Gene\+\_\+class, Seq\+\_\+side $>$, std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$ \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Safety\+\_\+bool\+\_\+map} \&}]{,  }\item[{\hyperlink{classEnum__fast__memory__map}{Mismatch\+\_\+vectors\+\_\+map} \&}]{,  }\item[{double \&}]{,  }\item[{double \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Evaluate all Event\+\_\+\+Realization of a Rec\+Event for a given sequence. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em scenario\+\_\+proba} & Probability of the currently explored (incomplete) scenario \\
+\hline
+\mbox{\tt in,out}  & {\em downstream\+\_\+proba\+\_\+map} & \\
+\hline
+\mbox{\tt in}  & {\em sequence} & The studied sequence in nucleotide code \\
+\hline
+\mbox{\tt in}  & {\em int\+\_\+sequence} & The studied sequence in integer code \\
+\hline
+\mbox{\tt in,out}  & {\em base\+\_\+index\+\_\+map} & Dynamic map recording where probabilities should be read on the marginals. \\
+\hline
+\mbox{\tt in}  & {\em offset\+\_\+map} & Tells the event by how much indices from the children events should be modified \\
+\hline
+\mbox{\tt in}  & {\em next\+\_\+event\+\_\+ptr\+\_\+arr} & Indicates the next event to call iterate on \\
+\hline
+\mbox{\tt in}  & {\em updated\+\_\+marginals\+\_\+point} & Summary marginals on which complete scenario posteriors are recorded \\
+\hline
+\mbox{\tt in}  & {\em model\+\_\+parameters\+\_\+point} & Current recombination probability distribution \\
+\hline
+\mbox{\tt in}  & {\em allowed\+\_\+realizations} & The set of genomic templates alignment \\
+\hline
+\mbox{\tt in,out}  & {\em constructed\+\_\+sequences} & Map containing the (incomplete) scenario\textquotesingle{}s resulting sequence \\
+\hline
+\mbox{\tt in,out}  & {\em seq\+\_\+offsets} & Map containing the 3\textquotesingle{} and 5\textquotesingle{} offsets of each scenario sequence piece \\
+\hline
+\mbox{\tt in}  & {\em error\+\_\+rate\+\_\+p} & Pointer to the error model object \\
+\hline
+\mbox{\tt in}  & {\em counters\+\_\+list} & The list of \hyperlink{classCounter}{Counter} to be counted \\
+\hline
+\mbox{\tt in}  & {\em events\+\_\+map} & A map containing all events contained in the Model\+\_\+parms, accessible through their type, gene class and side. \\
+\hline
+\mbox{\tt in,out}  & {\em safety\+\_\+set} & A map indicating whether checks on offsets overlap should be performed \\
+\hline
+\mbox{\tt in,out}  & {\em mismatches\+\_\+lists} & A map containing the (incomplete) scenario mismatches \\
+\hline
+\mbox{\tt in}  & {\em seq\+\_\+max\+\_\+prob\+\_\+scenario} & Most likely scenario\textquotesingle{}s probability for the considered sequence \\
+\hline
+\mbox{\tt in}  & {\em proba\+\_\+threshold\+\_\+factor} & Threshold on probability ratio between most likely scenario and explored scenario\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+The iterate method is the heart of I\+GoR\textquotesingle{}s scenario exploration. \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} define an order in which the Rec\+Event should be processed. Upon call of iterate all Event\+Realization of the Rec\+Event are assessed and for each possible realization the iterate method is called recursively for the next event. Inside the iterate method a filtering on too improbable realizations is performed (tree prunning) using the downstream\+\_\+proba\+\_\+map.
+
+The index map is used to read off the probability of the current Rec\+Event Event\+Realization at the correct location given the events parent\textquotesingle{}s realizations. It is further modified to take into account the current event\textquotesingle{}s realization when its children realization probabilities will be read. 
+
+Implements \hyperlink{classRec__Event_a0fea607ec06bdd1a7f5ebb04a96e5253}{Rec\+\_\+\+Event}.
+
+\mbox{\Hypertarget{classDinucl__markov_a8da33acb0a389a0a4c845a69c11b173c}\label{classDinucl__markov_a8da33acb0a389a0a4c845a69c11b173c}} 
+\index{Dinucl\+\_\+markov@{Dinucl\+\_\+markov}!update\+\_\+event\+\_\+internal\+\_\+probas@{update\+\_\+event\+\_\+internal\+\_\+probas}}
+\index{update\+\_\+event\+\_\+internal\+\_\+probas@{update\+\_\+event\+\_\+internal\+\_\+probas}!Dinucl\+\_\+markov@{Dinucl\+\_\+markov}}
+\subsubsection{\texorpdfstring{update\+\_\+event\+\_\+internal\+\_\+probas()}{update\_event\_internal\_probas()}}
+{\footnotesize\ttfamily void Dinucl\+\_\+markov\+::update\+\_\+event\+\_\+internal\+\_\+probas (\begin{DoxyParamCaption}\item[{const Marginal\+\_\+array\+\_\+p \&}]{,  }\item[{const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update probability values contained in a matrix where coordinates $>$=4 indicates ambiguous nucleotides We simply take the average probability over the different possible nucleotides. 
+
+Reimplemented from \hyperlink{classRec__Event_a6b5b41f5d35969c61ba5fc90895203c3}{Rec\+\_\+\+Event}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Dinuclmarkov.\+h\item 
+Dinuclmarkov.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{classModel__marginals}{}\section{Model\+\_\+marginals Class Reference}
+\label{classModel__marginals}\index{Model\+\_\+marginals@{Model\+\_\+marginals}}
+
+
+Encapsulates the marginal probabilities/posterior frequency for each recombination event\textquotesingle{}s realization.  
+
+
+
+
+{\ttfamily \#include $<$Model\+\_\+marginals.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classModel__marginals_af39c167e148333d7ef0fbb7e3671e4e6}\label{classModel__marginals_af39c167e148333d7ef0fbb7e3671e4e6}} 
+{\bfseries Model\+\_\+marginals} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a8940e4e8b183b0a9cc7678dc1c3aac69}\label{classModel__marginals_a8940e4e8b183b0a9cc7678dc1c3aac69}} 
+{\bfseries Model\+\_\+marginals} (const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_abc7cf626d915e7a6a9805b3d2a9e6ddf}\label{classModel__marginals_abc7cf626d915e7a6a9805b3d2a9e6ddf}} 
+size\+\_\+t {\bfseries compute\+\_\+size} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a97ee1d30aa7638a1a1c3e4362ded1fe4}\label{classModel__marginals_a97ee1d30aa7638a1a1c3e4362ded1fe4}} 
+size\+\_\+t {\bfseries get\+\_\+event\+\_\+size} (std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_ae4ef378bbec817842572b5538e95899e}\label{classModel__marginals_ae4ef378bbec817842572b5538e95899e}} 
+std\+::pair$<$ std\+::list$<$ std\+::pair$<$ Rec\+\_\+\+Event\+\_\+name, size\+\_\+t $>$ $>$, std\+::shared\+\_\+ptr$<$ long double $>$ $>$ {\bfseries compute\+\_\+event\+\_\+marginal\+\_\+probability} (Rec\+\_\+\+Event\+\_\+name, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a2e60c477a567ee76de8f0e7ec6929364}\label{classModel__marginals_a2e60c477a567ee76de8f0e7ec6929364}} 
+std\+::pair$<$ std\+::list$<$ std\+::pair$<$ Rec\+\_\+\+Event\+\_\+name, size\+\_\+t $>$ $>$, std\+::shared\+\_\+ptr$<$ long double $>$ $>$ {\bfseries compute\+\_\+event\+\_\+marginal\+\_\+probability} (Rec\+\_\+\+Event\+\_\+name, const std\+::set$<$ Rec\+\_\+\+Event\+\_\+name $>$ \&, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a9791d1f5adb5a336b02b39129618990a}\label{classModel__marginals_a9791d1f5adb5a336b02b39129618990a}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} \& {\bfseries operator=} (const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a2dd9431c456a5f3d74b3882cb0754daf}\label{classModel__marginals_a2dd9431c456a5f3d74b3882cb0754daf}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} \& {\bfseries operator+=} (\hyperlink{classModel__marginals}{Model\+\_\+marginals})
+\item 
+\mbox{\Hypertarget{classModel__marginals_aff98fb8317f93d4cac83b1c0e95139dd}\label{classModel__marginals_aff98fb8317f93d4cac83b1c0e95139dd}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} \& {\bfseries operator-\/=} (\hyperlink{classModel__marginals}{Model\+\_\+marginals})
+\item 
+\mbox{\Hypertarget{classModel__marginals_a349fc9203c44d78b412128f182edf3be}\label{classModel__marginals_a349fc9203c44d78b412128f182edf3be}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} {\bfseries operator+} (\hyperlink{classModel__marginals}{Model\+\_\+marginals})
+\item 
+\mbox{\Hypertarget{classModel__marginals_aa5f6720c88c804180bfcd3e433efb7ad}\label{classModel__marginals_aa5f6720c88c804180bfcd3e433efb7ad}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} {\bfseries operator-\/} (\hyperlink{classModel__marginals}{Model\+\_\+marginals})
+\item 
+\mbox{\Hypertarget{classModel__marginals_afcfcba336f58b08e37074556b82650e8}\label{classModel__marginals_afcfcba336f58b08e37074556b82650e8}} 
+void {\bfseries normalize} (std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::list$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$$>$$>$, std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a2481b2c5512f11270c0e551a7acbaaea}\label{classModel__marginals_a2481b2c5512f11270c0e551a7acbaaea}} 
+void {\bfseries uniform\+\_\+initialize} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_aaa03a2e34510c9287522f97cd8bf8fd5}\label{classModel__marginals_aaa03a2e34510c9287522f97cd8bf8fd5}} 
+void {\bfseries null\+\_\+initialize} ()
+\item 
+\mbox{\Hypertarget{classModel__marginals_a5256654ecde63273624344f5d97b4b66}\label{classModel__marginals_a5256654ecde63273624344f5d97b4b66}} 
+void {\bfseries random\+\_\+initialize} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_ab19249f2424bec29b470005ba4c79d70}\label{classModel__marginals_ab19249f2424bec29b470005ba4c79d70}} 
+void {\bfseries flatten} (std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+void \hyperlink{classModel__marginals_a44da8b738a7dd0f2a7d0d85176b17728}{set\+\_\+realization\+\_\+proba} (std\+::string, std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, double, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a05b3802a19702fac7e269a7e90668d54}\label{classModel__marginals_a05b3802a19702fac7e269a7e90668d54}} 
+void {\bfseries add\+\_\+pseudo\+\_\+counts} (double)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a9c8f981dcd6b790712d7be4cc60cae94}\label{classModel__marginals_a9c8f981dcd6b790712d7be4cc60cae94}} 
+bool {\bfseries add\+\_\+to\+\_\+marginals} (double event\+\_\+proba, std\+::list$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$, \hyperlink{classModel__Parms}{Model\+\_\+\+Parms})
+\item 
+\mbox{\Hypertarget{classModel__marginals_a5690e62b06935cfcfee53f4529fc4924}\label{classModel__marginals_a5690e62b06935cfcfee53f4529fc4924}} 
+void {\bfseries copy\+\_\+fixed\+\_\+events\+\_\+marginals} (const \hyperlink{classModel__marginals}{Model\+\_\+marginals} \&, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, const std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_ab91df6fa06531adbd7c8cbd96e3b6937}\label{classModel__marginals_ab91df6fa06531adbd7c8cbd96e3b6937}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$ $>$ $>$ {\bfseries get\+\_\+offsets\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a45ec257dfbd3b2d1f6ebab4417c2ca17}\label{classModel__marginals_a45ec257dfbd3b2d1f6ebab4417c2ca17}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::vector$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$ $>$ $>$ {\bfseries get\+\_\+offsets\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a56f6071a319eb5fa1a0b82f6903335e5}\label{classModel__marginals_a56f6071a319eb5fa1a0b82f6903335e5}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::list$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$ $>$ $>$ {\bfseries get\+\_\+inverse\+\_\+offset\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_af68b0128712b8c23471524c84798fa4e}\label{classModel__marginals_af68b0128712b8c23471524c84798fa4e}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, std\+::list$<$ std\+::pair$<$ std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$, int $>$ $>$ $>$ {\bfseries get\+\_\+inverse\+\_\+offset\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a0a9c2b56928b735cbcd4fb5e84022f87}\label{classModel__marginals_a0a9c2b56928b735cbcd4fb5e84022f87}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ {\bfseries get\+\_\+index\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_a09cd3221fd813558ec2fa765532e3511}\label{classModel__marginals_a09cd3221fd813558ec2fa765532e3511}} 
+std\+::unordered\+\_\+map$<$ Rec\+\_\+\+Event\+\_\+name, int $>$ {\bfseries get\+\_\+index\+\_\+map} (const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&, std\+::queue$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$$>$) const
+\item 
+\mbox{\Hypertarget{classModel__marginals_ae623523ce214d69fbedb702b372fb125}\label{classModel__marginals_ae623523ce214d69fbedb702b372fb125}} 
+void {\bfseries write2txt} (std\+::string, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a9bc9a3c5737201aa95098f0b45ea0396}\label{classModel__marginals_a9bc9a3c5737201aa95098f0b45ea0396}} 
+void {\bfseries txt2marginals} (std\+::string, const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_a4bf67274ef4dea0896c5fe30a9a8d79d}\label{classModel__marginals_a4bf67274ef4dea0896c5fe30a9a8d79d}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} {\bfseries empty\+\_\+copy} ()
+\item 
+\mbox{\Hypertarget{classModel__marginals_a05f948c58f8b091194245f853364d8c5}\label{classModel__marginals_a05f948c58f8b091194245f853364d8c5}} 
+\hyperlink{classModel__marginals}{Model\+\_\+marginals} \& {\bfseries invert\+\_\+edge} (Rec\+\_\+\+Event\+\_\+name, Rec\+\_\+\+Event\+\_\+name, \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&)
+\item 
+\mbox{\Hypertarget{classModel__marginals_aefa541992abc69151818921a22bba39a}\label{classModel__marginals_aefa541992abc69151818921a22bba39a}} 
+size\+\_\+t {\bfseries get\+\_\+length} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classModel__marginals_a1736cfe21de1850972f94a42cebfd593}\label{classModel__marginals_a1736cfe21de1850972f94a42cebfd593}} 
+std\+::string {\bfseries debug\+\_\+marg\+\_\+name}
+\item 
+\mbox{\Hypertarget{classModel__marginals_a918c349bdf1ff0b8da608bd2aa813a2c}\label{classModel__marginals_a918c349bdf1ff0b8da608bd2aa813a2c}} 
+std\+::unique\+\_\+ptr$<$ long double \mbox{[}$\,$\mbox{]}$>$ {\bfseries marginal\+\_\+array\+\_\+smart\+\_\+p}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulates the marginal probabilities/posterior frequency for each recombination event\textquotesingle{}s realization. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0
+\end{DoxyVersion}
+Model\+\_\+\+Marginals central component is a giant array containing all the marginal probabilities (or posterior frequencies during the inference) for each event realization. The class supplies various methods to navigate into this array and as well methods handling normalization and other various transformation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel__marginals_a44da8b738a7dd0f2a7d0d85176b17728}\label{classModel__marginals_a44da8b738a7dd0f2a7d0d85176b17728}} 
+\index{Model\+\_\+marginals@{Model\+\_\+marginals}!set\+\_\+realization\+\_\+proba@{set\+\_\+realization\+\_\+proba}}
+\index{set\+\_\+realization\+\_\+proba@{set\+\_\+realization\+\_\+proba}!Model\+\_\+marginals@{Model\+\_\+marginals}}
+\subsubsection{\texorpdfstring{set\+\_\+realization\+\_\+proba()}{set\_realization\_proba()}}
+{\footnotesize\ttfamily void Model\+\_\+marginals\+::set\+\_\+realization\+\_\+proba (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{std\+::shared\+\_\+ptr$<$ const \hyperlink{classRec__Event}{Rec\+\_\+\+Event} $>$}]{,  }\item[{double}]{,  }\item[{const \hyperlink{classModel__Parms}{Model\+\_\+\+Parms} \&}]{ }\end{DoxyParamCaption})}
+
+Sets the realization probability to the given value Note that the value will be set for all conditional dependences
+
+//\+T\+O\+DO recode this in order to be able to set several realizations probas at the same time //\+F\+I\+X\+ME if the supplied new value is 1.\+0 there will be a zero division issue (this could be fixed by fixing all others to 0 instead of trying to set the supplied one to 1) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Model\+\_\+marginals.\+h\item 
+Model\+\_\+marginals.\+cpp\end{DoxyCompactItemize}

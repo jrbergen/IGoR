@@ -1,0 +1,33 @@
+\hypertarget{structnull__delete}{}\section{null\+\_\+delete$<$ T $>$ Struct Template Reference}
+\label{structnull__delete}\index{null\+\_\+delete$<$ T $>$@{null\+\_\+delete$<$ T $>$}}
+
+
+Declare a \hyperlink{structnull__delete}{null\+\_\+delete} function.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structnull__delete_aa8e9a2cfdcb8be0a53922e862d1d41b2}\label{structnull__delete_aa8e9a2cfdcb8be0a53922e862d1d41b2}} 
+void {\bfseries operator()} (T $\ast$\&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct null\+\_\+delete$<$ T $>$}
+
+Declare a \hyperlink{structnull__delete}{null\+\_\+delete} function. 
+
+\begin{DoxyAuthor}{Author}
+Q.\+Marcou This function is not performing any task, it\textquotesingle{}s purpose is to supply a \char`\"{}null\+\_\+delete\char`\"{} function to prevent shared pointer objects created when passing \hyperlink{classRec__Event}{Rec\+\_\+\+Event} or \hyperlink{classError__rate}{Error\+\_\+rate} objects pointers to model\+\_\+parms to be destroyed when the model\+\_\+parms object is destroyed itself and the rec\+\_\+event and error\+\_\+rate objects might still be of used (and if not prevent from a segfault error by trying to delete them twice) 
+\end{DoxyAuthor}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utils.\+h\end{DoxyCompactItemize}
